@@ -6,3 +6,9 @@ h1 {
 p {
     color:blue
 }
+div{
+    width: 100%;
+}
+img{
+    width: 500px;
+}
