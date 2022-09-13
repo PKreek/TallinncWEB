@@ -54,6 +54,16 @@ body {
     cursor: pointer;
 }
 
+.bakgrundsbild img{
+    max-width: 100%;
+    height:auto;
+    opacity: 0.9;
+    
+    
+    
+}
+
 .contentbilder img {
 	width: 20%;
+    
 }
