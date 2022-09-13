@@ -5,6 +5,7 @@ body {
 
 .navbar {
 	width: 100%;
+    height: auto;
 	padding: 0;
 	display: flex;
 	align-items: center;
@@ -56,11 +57,8 @@ body {
 
 .bakgrundsbild img{
     max-width: 100%;
-    height:auto;
-    opacity: 0.9;
-    
-    
-    
+    height: auto;
+    object-fit: contain;
 }
 
 .contentbilder img {
