@@ -65,3 +65,51 @@ body {
 	width: 20%;
     
 }
+
+
+/* om oss design*/
+.vi img{
+	width: 250px;
+	margin-left: -50px;
+	margin-top:25px;
+}
+.text
+{
+	width: 250px;
+	padding-bottom:25px;
+	
+}
+.nav-main
+{
+	width:100%;
+	
+}
+.nav-main .omOssRubrik
+{
+	margin:auto;
+	
+}
+
+
+.omOssRubrik
+{
+    
+	font-size: 30px;
+}
+.om-oss-text
+{
+	font-size:20px;
+}
+.vi
+{
+	
+	position:fixed;
+	display:flex;
+	flex-wrap: wrap;
+
+}
+li img{
+	padding: 25px;
+	z-index:1000;
+	
+}
