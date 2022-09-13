@@ -1,14 +1,59 @@
-h1 {
-    color: black;
-    font-size:xx-large;
+body {
+	margin: 0;
+	background-color: white;
 }
 
-p {
-    color:blue
+.navbar {
+	width: 100%;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	background-color: white;
+    border-bottom: solid black;
 }
-div{
-    width: 100%;
+.navbar ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
 }
-img{
-    width: 500px;
+
+.navbar ul li a {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: small;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: black;
+	text-decoration: none;
+}
+
+.navbar ul li::after {
+	content: "";
+	height: 3px;
+	width: 0;
+	background: black;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+	width: 100%;
+}
+.navicons span{
+	margin-left: 48rem;
+    font-size: 28px;
+    font-weight: 600;
+	cursor: pointer;
+}
+
+#logo {
+	width: 4%;
+	color: white;
+    cursor: pointer;
+}
+
+.contentbilder img {
+	width: 20%;
 }
