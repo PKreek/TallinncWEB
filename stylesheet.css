@@ -9,9 +9,10 @@ body {
 	padding: 0;
 	display: flex;
 	align-items: center;
-	background-color: white;
+	background-color: whitesmoke;
     border-bottom: solid black;
-	
+	justify-content: space-between;
+
 }
 .navbar ul li {
 	list-style: none;
@@ -22,7 +23,7 @@ body {
 
 .navbar ul li a {
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight:600;
 	font-size: small;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	color: black;
@@ -44,10 +45,16 @@ body {
 	width: 100%;
 }
 .navicons span{
-	margin-left: 48rem;
     font-size: 28px;
     font-weight: 600;
 	cursor: pointer;
+}
+.material-symbols-outlined{
+	margin: 0.4rem;
+}
+
+.navicons-items{
+	text-align: right;
 }
 
 #logo {
@@ -60,6 +67,7 @@ body {
     max-width: 100%;
     height: auto;
     object-fit: contain;
+	
 }
 
 .columns{
