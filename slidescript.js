@@ -1,4 +1,4 @@
-const slideButtons = document.querySelectorAll("[data-bildspel-knapp]");
+const slideButtons = document.querySelectorAll("[data-slideknapp]");
 const slides = document.querySelector("#bildspel-lista");
 let activeSlide = document.querySelector("[data-active]");
 
@@ -6,18 +6,22 @@ let activeSlide = document.querySelector("[data-active]");
 // console.log(activeSlide)
 // console.log(slides)
 
-slideButtons.forEach(button => {
-    button.addEventListener("click", (knapp) => {
-        //const offset = button.dataset.data-bildspel-knapp === "next" ? 1 : -1;
-        const offset = 1;
-        //console.log(offset);
-
-        //console.log([...slides.children].indexOf(activeSlide))
+slideButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        console.log(button)
+        console.log(button.dataset.slideknapp)
+        const offset = button.dataset.slideknapp === "next" ? 1 : -1;
+        console.log(offset);
 
         let newIndex = [...slides.children].indexOf(activeSlide) + offset;
-        console.log(slides)
-        console.log(slides.length)
-        if(newIndex===Array.from(slides.children).length){newIndex=0};
+       
+        const arrayLength = Array.from(slides.children).length;
+        if(newIndex===arrayLength){
+            newIndex=0;
+        } else if (newIndex < 0) {
+            newIndex = arrayLength - 1;
+        };
+        
 
         slides.children[newIndex].dataset.active = true;
         delete activeSlide.dataset.active;
