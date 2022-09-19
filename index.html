@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<link rel="stylesheet" href="stylesheet.css" />
-		<script src="script.js"></script>
+		<script src="script.js" defer></script>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,6 +34,17 @@
 		<div class="bakgrundsbild">
 			<img src="bilder/sneakerbakgrunden.png" />
 		</div>
+		<!-- Slideshow!!!!! --> 
+		<div id="bildspel">
+			<button class="bildspel-knapp prev" data-slideknapp="prev">&#8592;</button>
+			<button class="bildspel-knapp next" data-slideknapp="next">&#8594;</button>
+			<ul id="bildspel-lista">
+				<li class="slide" data-active="true"><img src="bilder/sko1.jpg" alt="något"></li>
+				<li class="slide"><img src="bilder/sko2.jpg" alt="något"></li>
+				<li class="slide"><img src="bilder/sko3.jpg"alt="något"></li>
+			</ul>
+		</div>
+		<!-- Slut på Slideshow!!!!! -->
 		<div class="contentbilder">
             <div class="columns">
 			<div><img src="bilder/sko1.jpg" alt="något" /></div>
