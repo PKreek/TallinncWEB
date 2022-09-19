@@ -12,6 +12,7 @@ body {
 	background-color: whitesmoke;
     border-bottom: solid black;
 	justify-content: space-between;
+	position: fixed;
 
 }
 .navbar ul li {
@@ -51,8 +52,11 @@ body {
 }
 .material-symbols-outlined{
 	margin: 0.4rem;
+	transition: transform .2s;
 }
-
+.material-symbols-outlined:hover{
+	transform:scale(1.2);
+}
 .navicons-items{
 	text-align: right;
 }
