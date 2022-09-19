@@ -10,7 +10,8 @@ body {
 	padding: 0;
 	display: flex;
 	align-items: center;
-	background-color: whitesmoke;
+	background: rgb(170,170,170);
+    background: linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(226,226,226,1) 50%, rgba(170,170,170,1) 100%);
     border-bottom: solid black;
 	justify-content: space-between;
 	position: fixed;
@@ -63,7 +64,6 @@ body {
 }
 
 #logo {
-	
 	color: black;
     cursor: pointer;
 	margin-left: 1rem;
