@@ -63,9 +63,15 @@ body {
 }
 
 #logo {
-	width: 4%;
-	color: white;
+	
+	color: black;
     cursor: pointer;
+	margin-left: 1rem;
+	font-size: x-large;
+}
+
+#logo em{
+	color:red
 }
 
 .bakgrundsbild img{
