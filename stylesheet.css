@@ -136,6 +136,66 @@ li img{
 	
 }
 
+
+/*Style för formulär*/
+.contact-us
+{
+	background-color: rgba(0, 128, 0, 0.308);
+	color:white;
+	font-size:20px;
+	padding:40px;
+}
+body{
+	margin:0;
+	background-color: grey;
+}
+form{
+	padding:40px;
+}
+.form-group label{
+	display:block;
+	font-size:20px;
+	margin-bottom:10px;
+}
+.form-group, input, textarea
+{
+	width:320px;
+	padding:10px;
+	font-size: 16px;
+	margin-bottom:8px;
+}
+.form-group, textarea
+{
+	
+}
+hr
+{
+	height: 2px;
+	width:340px;
+	background-color:rgba(0, 128, 0, 0.308);
+	border:none;
+	margin-bottom:20px;
+	margin-top:30px;
+}
+button
+{
+	padding:10px;
+	font-size:20px;
+	background: none;
+	border:2px solid rgba(0, 128, 0, 0.308);
+	border-radius: 10px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+button:hover
+{
+	background-color:rgba(0, 128, 0, 0.308);
+	border:black;
+	color:white;
+}
+
+
+
 /*Bildspel*/
 #bildspel {
     width: 100vw;
