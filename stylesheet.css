@@ -16,7 +16,7 @@ body {
     border-bottom: solid black;
 	justify-content: space-between;
 	position: fixed;
-
+	z-index: 3;
 }
 .navbar ul li {
 	list-style: none;
