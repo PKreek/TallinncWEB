@@ -31,6 +31,7 @@ const { createApp } = Vue
 const app = createApp ({
     data() {
         return {
+            iKundvagn: 0,
             kundvagn: [],
             skor: [
                 {
@@ -49,6 +50,7 @@ const app = createApp ({
     methods: {
         kopSko(sko) {
             this.kundvagn.push(sko);
+            this.iKundvagn++;
         }
     }
 }).mount('#app') 
