@@ -6,8 +6,6 @@ let activeSlide = document.querySelector("[data-active]");
 
 slideButtons.forEach((button) => {
     button.addEventListener("click", () => {
-        console.log(button)
-        console.log(button.dataset.slideknapp)
         const offset = button.dataset.slideknapp === "next" ? 1 : -1;
         console.log(offset);
 
@@ -26,3 +24,21 @@ slideButtons.forEach((button) => {
     })
 });
 //SlUT PÅ BILDSPEL
+
+//WEBSHOP
+const { createApp } = Vue
+
+const app = createApp ({
+    data() {
+        return {
+            kundvagn: [],
+            skor: [
+                {
+                    namn: "En sko",
+                    pris: "1199",
+                    bild: "bilder/sko1.jpg"
+                }
+            ]
+        }
+    }
+}).mount('#app') 
