@@ -56,7 +56,10 @@
 		<!-- Webshop!!!!! -->
 		<div id="app">
 			<div v-for="sko in skor">
-				<img src="sko.bild">
+				<img :src="sko.bild">
+				<p>{{sko.namn}}</p>
+				<p>{{sko.pris}}</p>
+				<button>KÖP</button>
 			</div>
 		</div> 
 		<!-- Slut på webshop!!!!! --> 
