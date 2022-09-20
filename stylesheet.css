@@ -87,6 +87,7 @@ body {
 }
 
 #rubrikcontentbilder{
+	margin-top: 5rem;
 	text-align: center;
 	font-size: 300%;
 	font-weight: 900;
@@ -103,7 +104,6 @@ body {
     grid-auto-columns: 1fr;
     padding: 1rem;
     text-align: center;
-    
 }
 
 .contentbilder img {
@@ -225,10 +225,6 @@ button:hover
 	border:black;
 	color:white;
 }
-.material-symbols-outlined
-{
-	
-}
 
 .check-circle, .exclamation-circle
 {
@@ -283,5 +279,9 @@ button:hover
 #bildspel-lista{
 	list-style: none;
 	
+}
+
+ul li p {
+	margin-left: 12.5rem;
 }
 /*SlutBildspel*/
