@@ -149,14 +149,14 @@ li img{
 
 
 /*Style för formulär*/
-#form .contact-us
+.contact-us
 {
 	background-color: rgba(0, 128, 0, 0.308);
 	color:white;
 	font-size:20px;
 	padding:40px;
 }
-#form, body{
+body{
 	margin:0;
 	background-color: grey;
 }
@@ -187,7 +187,7 @@ input, textarea
 	visibility: hidde;
 }
 
-#form hr
+hr
 {
 	height: 2px;
 	width:340px;
@@ -197,7 +197,7 @@ input, textarea
 	margin-top:30px;
 }
 
-#form button
+button
 {
 	padding:10px;
 	font-size:20px;
@@ -207,13 +207,16 @@ input, textarea
 	transition: all 0.5s;
 	cursor: pointer;
 }
-#form button:hover
+button:hover
 {
 	background-color:rgba(0, 128, 0, 0.308);
 	border:black;
 	color:white;
 }
-
+.material-symbols-outlined
+{
+	
+}
 
 .check-circle, .exclamation-circle
 {
@@ -228,8 +231,6 @@ input, textarea
     width: 100vw;
     height: 100vh;
     position: relative;
-	text-align: center;
-
 }
 
 .slide {
@@ -240,10 +241,8 @@ input, textarea
 
 .slide > img {
 	display: block;
-	width: 80%;
-	height: 80%;
-	
-    object-position: center;
+	width: 20%;
+	height: 40%; 
 }
 
 .slide[data-active] {
