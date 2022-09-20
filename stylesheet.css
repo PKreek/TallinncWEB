@@ -11,8 +11,7 @@ body {
 	padding: 0;
 	display: flex;
 	align-items: center;
-	background: rgb(170,170,170);
-    background: linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(226,226,226,1) 50%, rgba(170,170,170,1) 100%);
+	background: white;
     border-bottom: solid black;
 	justify-content: space-between;
 	position: fixed;
@@ -82,8 +81,19 @@ body {
 }
 #news{
 	margin-top: 5rem;
+	padding-left: 1rem;
 	font-weight: 300;
 	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#rubrikcontentbilder{
+	text-align: center;
+	font-size: 300%;
+	font-weight: 900;
+}
+#paragrafcontentbilder{
+	text-align: center;
+	
 }
 
 .columns{
@@ -95,10 +105,11 @@ body {
     text-align: center;
     
 }
+
 .contentbilder img {
-	width: 50%;
-    
-    
+	width: 70%;
+	height: 100%;
+	border-radius: 0.5rem;   
 }
 
 
