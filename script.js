@@ -34,7 +34,6 @@ const togglaKundvagn = (()=>{
     }else{
         kundvagnen.style.display = "block";
     }
-    
 });
 
 const { createApp } = Vue
@@ -62,6 +61,10 @@ const app = createApp ({
         kopSko(sko) {
             this.kundvagn.push(sko);
             this.iKundvagn++;
+        },
+        taBortSko(sko) {
+            this.kundvagn.splice(sko.indexOf,1);
+            this.iKundvagn--;
         }
     }
 }).mount('#app'); 
