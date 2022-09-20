@@ -4,12 +4,13 @@
 
     <head>
         <link rel="stylesheet" href="stylesheet.css">
-        <script src="formular.js"></script>
+        <script  defer src="formular.js" ></script>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <title>Formulär</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>  
 
     <body>
@@ -17,32 +18,57 @@
             <h1>Contact us</h1>
             <p1> We love to hear from you! Fill out the form and we will reach back as soon as posible </p1>
         </div>
-            <form action="" methon="get"> 
+
+
+
+
+            <form id="form" class="form"> 
                 <div class="form-group">
-                    <div>
-                        <label for="name">Namn:</label>
-                        <input type ="text" name="name" id="name"/></div>
+                    <label for="name">Namn:</label>
+                    <input type ="text" name="name" id="name"/>
+                    
+                    
+                    <div class="check-circle">
+                        <i class="material-symbols-outlined">
+                        check_circle
+                        </i>
+                        <i class="material-symbols-outlined" >
+                        cancel
+                        </i>
+                        <small>Error message</small>
+                    </div>
+                
+                    
+
                     <div> 
                         <label for="number">Nummer:</label>
                         <input type ="tel" name="number" id="number" value=""/>
                     </div>
-                    <div>
+
+
+
+                    <div class = "a">
                         <label for ="email">Email:</label>
-                        <input type ="email" name="email" id="email"/>
+                        <input type ="email" name="email" id="email" onkeydown="validering()"/>
                     </div>
+
+
+
+                    
                     <div>
                         <label for ="text">Text:</label>
                         <textarea name="text" id="text"></textarea>
                     </div>
+                    
                 
         
-        </form>
-        <hr />
-        <button type="Reset">Reset</button>
-        <button type="Submit">Submit</button>
-   
-    </div>
+                </form>
+                    <hr />
+                    <button type="Reset">Reset</button>
+                    <button type="submit">Submit</button>
+    
+                </div>
     </body>
-
+   
 
 </html>

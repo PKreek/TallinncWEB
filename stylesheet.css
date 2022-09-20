@@ -149,10 +149,11 @@ body{
 	margin:0;
 	background-color: grey;
 }
-form{
+.form-group{
 	padding:40px;
+	width: 100px;
 }
-.form-group label{
+#form label{
 	display:block;
 	font-size:20px;
 	margin-bottom:10px;
@@ -164,10 +165,17 @@ form{
 	font-size: 16px;
 	margin-bottom:8px;
 }
-.form-group, textarea
+input, textarea
 {
-	
+	border-radius: 5px;
+	border:none;
 }
+
+.check-circle
+{
+	visibility: hidde;
+}
+
 hr
 {
 	height: 2px;
@@ -177,6 +185,7 @@ hr
 	margin-bottom:20px;
 	margin-top:30px;
 }
+
 button
 {
 	padding:10px;
@@ -192,6 +201,16 @@ button:hover
 	background-color:rgba(0, 128, 0, 0.308);
 	border:black;
 	color:white;
+}
+.material-symbols-outlined
+{
+	
+}
+
+.check-circle, .exclamation-circle
+{
+	color:green;
+	display:inline;
 }
 
 
