@@ -87,14 +87,16 @@ body {
 }
 
 #rubrikcontentbilder{
-	margin-top: 5rem;
+	margin-top: 8rem;
 	text-align: center;
 	font-size: 300%;
-	font-weight: 900;
+	font-weight: bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 #paragrafcontentbilder{
 	text-align: center;
-	
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .columns{
@@ -236,7 +238,7 @@ button:hover
 
 /*Bildspel*/
 #bildspel {
-    width: 60vw;
+    width: 70vw;
     height: 70vh;
     position: relative;
 	margin-left: auto;
@@ -282,6 +284,6 @@ button:hover
 }
 
 ul li p {
-	margin-left: 12.5rem;
+	margin-left: 14rem;
 }
 /*SlutBildspel*/
