@@ -45,5 +45,10 @@ const app = createApp ({
                 }
             ]
         }
+    },
+    methods: {
+        kopSko(sko) {
+            this.kundvagn.push(sko);
+        }
     }
 }).mount('#app') 
