@@ -79,7 +79,11 @@ body {
     max-width: 100%;
     height: auto;
     object-fit: contain;
-	
+}
+#news{
+	margin-top: 5rem;
+	font-weight: 300;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .columns{
