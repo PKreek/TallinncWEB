@@ -156,10 +156,7 @@ li img{
 	font-size:20px;
 	padding:40px;
 }
-body{
-	margin:0;
-	background-color: grey;
-}
+
 .form-group{
 	padding:40px;
 	width: 100px;
@@ -228,9 +225,12 @@ button:hover
 
 /*Bildspel*/
 #bildspel {
-    width: 100vw;
-    height: 100vh;
+    width: 60vw;
+    height: 70vh;
     position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	
 }
 
 .slide {
@@ -241,8 +241,8 @@ button:hover
 
 .slide > img {
 	display: block;
-	width: 20%;
-	height: 40%; 
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .slide[data-active] {
