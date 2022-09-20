@@ -28,7 +28,15 @@
 							search 
 						</span>
 						<span class="material-symbols-outlined">
-							<p>shopping_cart {{iKundvagn}}</p>
+							<div class="kundvagn-container">	
+								<p class="kundvagn-knapp" onclick="togglaKundvagn()">shopping_cart {{iKundvagn}}</p>
+								<div id ="kundvagn-meny">
+									<div v-for="sko in kundvagn">
+										<p>{{sko.namn}}</p>
+									</div>
+								</div>					
+							</div>
+							
 						</span>
 					</div>    
 				</div>

@@ -26,6 +26,17 @@ slideButtons.forEach((button) => {
 //SlUT PÅ BILDSPEL
 
 //WEBSHOP
+
+const togglaKundvagn = (()=>{
+    const kundvagnen = document.getElementById("kundvagn-meny");
+    if(kundvagnen.style.display === "block"){
+        kundvagnen.style.display = "none";
+    }else{
+        kundvagnen.style.display = "block";
+    }
+    
+});
+
 const { createApp } = Vue
 
 const app = createApp ({
@@ -53,4 +64,4 @@ const app = createApp ({
             this.iKundvagn++;
         }
     }
-}).mount('#app') 
+}).mount('#app'); 
