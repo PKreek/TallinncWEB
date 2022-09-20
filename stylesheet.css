@@ -148,14 +148,14 @@ li img{
 
 
 /*Style för formulär*/
-.contact-us
+#form .contact-us
 {
 	background-color: rgba(0, 128, 0, 0.308);
 	color:white;
 	font-size:20px;
 	padding:40px;
 }
-body{
+#form, body{
 	margin:0;
 	background-color: grey;
 }
@@ -186,7 +186,7 @@ input, textarea
 	visibility: hidde;
 }
 
-hr
+#form hr
 {
 	height: 2px;
 	width:340px;
@@ -196,7 +196,7 @@ hr
 	margin-top:30px;
 }
 
-button
+#form button
 {
 	padding:10px;
 	font-size:20px;
@@ -206,16 +206,13 @@ button
 	transition: all 0.5s;
 	cursor: pointer;
 }
-button:hover
+#form button:hover
 {
 	background-color:rgba(0, 128, 0, 0.308);
 	border:black;
 	color:white;
 }
-.material-symbols-outlined
-{
-	
-}
+
 
 .check-circle, .exclamation-circle
 {
