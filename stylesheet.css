@@ -10,9 +10,11 @@ body {
 	padding: 0;
 	display: flex;
 	align-items: center;
-	background-color: whitesmoke;
+	background: rgb(170,170,170);
+    background: linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(226,226,226,1) 50%, rgba(170,170,170,1) 100%);
     border-bottom: solid black;
 	justify-content: space-between;
+	position: fixed;
 
 }
 .navbar ul li {
@@ -52,16 +54,24 @@ body {
 }
 .material-symbols-outlined{
 	margin: 0.4rem;
+	transition: transform .2s;
 }
-
+.material-symbols-outlined:hover{
+	transform:scale(1.2);
+}
 .navicons-items{
 	text-align: right;
 }
 
 #logo {
-	width: 4%;
-	color: white;
+	color: black;
     cursor: pointer;
+	margin-left: 1rem;
+	font-size: x-large;
+}
+
+#logo em{
+	color:red
 }
 
 .bakgrundsbild img{
@@ -109,8 +119,6 @@ body {
 	margin:auto;
 	
 }
-
-
 .omOssRubrik
 {
     
@@ -122,8 +130,6 @@ body {
 }
 .vi
 {
-	
-	
 	display:flex;
 	flex-wrap: wrap;
 
@@ -139,6 +145,66 @@ li img{
     font-size:16px;
 	
 }
+
+
+/*Style för formulär*/
+.contact-us
+{
+	background-color: rgba(0, 128, 0, 0.308);
+	color:white;
+	font-size:20px;
+	padding:40px;
+}
+body{
+	margin:0;
+	background-color: grey;
+}
+form{
+	padding:40px;
+}
+.form-group label{
+	display:block;
+	font-size:20px;
+	margin-bottom:10px;
+}
+.form-group, input, textarea
+{
+	width:320px;
+	padding:10px;
+	font-size: 16px;
+	margin-bottom:8px;
+}
+.form-group, textarea
+{
+	
+}
+hr
+{
+	height: 2px;
+	width:340px;
+	background-color:rgba(0, 128, 0, 0.308);
+	border:none;
+	margin-bottom:20px;
+	margin-top:30px;
+}
+button
+{
+	padding:10px;
+	font-size:20px;
+	background: none;
+	border:2px solid rgba(0, 128, 0, 0.308);
+	border-radius: 10px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+button:hover
+{
+	background-color:rgba(0, 128, 0, 0.308);
+	border:black;
+	color:white;
+}
+
+
 
 /*Bildspel*/
 #bildspel {
