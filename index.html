@@ -3,6 +3,7 @@
 	<head>
 		<link rel="stylesheet" href="stylesheet.css" />
 		<script src="script.js" defer></script>
+		<script src="https://unpkg.com/vue@3"></script>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +16,7 @@
 	<body>
 		<header>
 			<div class="navbar">
-				<img src="bilder/sneakerlogo.jpg" alt="" id="logo"/>          
+				<p id="logo">Sko<em>Xperterna</em></p>          
 				<ul>
 					<li><a href="omOss.html">om oss</a></li>
 					<li><a href=".html">kontakta oss</a></li>
@@ -26,7 +27,7 @@
 						search 
 					</span>
 					<span class="material-symbols-outlined">
-						shopping_cart_checkout
+						shopping_cart
 					</span>
 				</div>    
 			</div>
@@ -52,5 +53,12 @@
 			<div><img src="bilder/sko3.jpg" alt="något" /></div>
             </div>
 		</div>
+		<!-- Webshop!!!!! -->
+		<div id="app">
+			<div v-for="sko in skor">
+				<img src="sko.bild">
+			</div>
+		</div> 
+		<!-- Slut på webshop!!!!! --> 
 	</body>
 </html>

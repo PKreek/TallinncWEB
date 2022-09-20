@@ -10,9 +10,11 @@ body {
 	padding: 0;
 	display: flex;
 	align-items: center;
-	background-color: whitesmoke;
+	background: rgb(170,170,170);
+    background: linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(226,226,226,1) 50%, rgba(170,170,170,1) 100%);
     border-bottom: solid black;
 	justify-content: space-between;
+	position: fixed;
 
 }
 .navbar ul li {
@@ -52,16 +54,24 @@ body {
 }
 .material-symbols-outlined{
 	margin: 0.4rem;
+	transition: transform .2s;
 }
-
+.material-symbols-outlined:hover{
+	transform:scale(1.2);
+}
 .navicons-items{
 	text-align: right;
 }
 
 #logo {
-	width: 4%;
-	color: white;
+	color: black;
     cursor: pointer;
+	margin-left: 1rem;
+	font-size: x-large;
+}
+
+#logo em{
+	color:red
 }
 
 .bakgrundsbild img{
@@ -219,7 +229,7 @@ button:hover
 #bildspel {
     width: 100vw;
     height: 100vh;
-    position: relative
+    position: relative;
 
 }
 
