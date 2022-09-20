@@ -156,7 +156,7 @@ li img{
 	font-size:20px;
 	padding:40px;
 }
-body{
+#form body{
 	margin:0;
 	background-color: grey;
 }
@@ -213,10 +213,7 @@ button:hover
 	border:black;
 	color:white;
 }
-.material-symbols-outlined
-{
-	
-}
+
 
 .check-circle, .exclamation-circle
 {
