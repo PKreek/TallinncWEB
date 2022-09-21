@@ -3,26 +3,37 @@
 const slideButtons = document.querySelectorAll("[data-slideknapp]");
 const slides = document.querySelector("#bildspel-lista");
 let activeSlide = document.querySelector("[data-active]");
+let slideTimer;
 
 slideButtons.forEach((button) => {
     button.addEventListener("click", () => {
         const offset = button.dataset.slideknapp === "next" ? 1 : -1;
-        console.log(offset);
-
-        let newIndex = [...slides.children].indexOf(activeSlide) + offset;
-       
-        const arrayLength = Array.from(slides.children).length;
-        if(newIndex===arrayLength){
-            newIndex=0;
-        } else if (newIndex < 0) {
-            newIndex = arrayLength - 1;
-        };
-
-        slides.children[newIndex].dataset.active = true;
-        delete activeSlide.dataset.active;
-        activeSlide = slides.children[newIndex];
+        
+        nextSlide(offset);
     })
 });
+
+const nextSlide = ((offset)=>{
+    let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+   
+    const arrayLength = Array.from(slides.children).length;
+    if(newIndex===arrayLength){
+        newIndex=0;
+    } else if (newIndex < 0) {
+        newIndex = arrayLength - 1;
+    };
+
+    slides.children[newIndex].dataset.active = true;
+    delete activeSlide.dataset.active;
+    activeSlide = slides.children[newIndex];    
+
+    clearTimeout(slideTimer);
+    slideTimer = setTimeout(()=>{nextSlide(1)}, 3000);
+});
+
+slideTimer = setTimeout(()=>{nextSlide(1)}, 3000);
+
+
 //SlUT PÅ BILDSPEL
 
 //WEBSHOP
