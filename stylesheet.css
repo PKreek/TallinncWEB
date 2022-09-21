@@ -203,7 +203,10 @@ input, textarea
 	border:none;
 }
 
-input, textarea
+.check-circle
+{
+	visibility: hidde;
+}
 
 hr
 {
