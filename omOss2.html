@@ -11,36 +11,23 @@
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
 		/>
-		<title>Om oss</title>
+		<title>Om</title>
 	</head>
 	<body>
-		<div id="app">
 			<header>
 				<div class="navbar">
 					<p id="logo">Sko<em>Xperterna</em></p>
 					<ul>
 						<li><a href="omOss.html">om oss</a></li>
 						<li><a href="form.html">kontakta oss</a></li>
-						<li><a href=".html">nyheter</a></li>	
+						<li><a href=".html">nyheter</a></li>
+                        <li><a href="butik.html">butik</a></li>	
 					</ul>
 					<div class="navicons">
 						<span class="material-symbols-outlined">
 							search 
 						</span>
-						<span class="material-symbols-outlined">
-							<div class="kundvagn-container">	
-								<p class="kundvagn-knapp" onclick="togglaKundvagn()">shopping_cart {{iKundvagn}}</p>
-								<div id ="kundvagn-meny">
-									<div v-for="sko in kundvagn">
-										<p>{{sko.namn}}</p>
-										<p>{{sko.pris}}</p>
-										<button @click="taBortSko">Ta bort</button>
-									</div>
-								</div>					
-							</div>
-							
-						</span>
-					</div>    
+					</div>
 				</div>
 			</header>
 			<div class="bakgrundsbild">
@@ -59,6 +46,6 @@
 				</div>
 			</div>
 
-		</div>
+		
 	</body>
 </html>
