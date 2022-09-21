@@ -126,11 +126,16 @@ body {
 	width: 250px;
 	margin-left: -50px;
 	margin-top:25px;
+	width: 15.625em;
+	margin-left: -3.125em;
+	margin-top:1.5625em;
 }
 .text
 {
 	width: 250px;
 	padding-bottom:25px;
+	width: 3.125em;
+	padding-bottom:15.625em;
 	
 }
 .nav-main
@@ -145,12 +150,7 @@ body {
 }
 .omOssRubrik
 {
-    
-	font-size: 30px;
-}
-.om-oss-text
-{
-	font-size:20px;
+	font-size:1.25em;
 }
 .vi
 {
@@ -160,70 +160,68 @@ body {
 }
 li img{
 	list-style:none;
-	line-height:60px;
-	padding-left:50px;
+	line-height: 3.75em;
+	padding: left 3.125em;;
     display:flex;
-	height: 200px;
+	height: 12.5em;
     color: #111;
     font-family:arial;
-    font-size:16px;
+    font-size:1em;
 	
 }
-
-
-/*Style för formulär*/
-.contact-us
-{
-	background-color: rgba(0, 128, 0, 0.308);
-	color:white;
-	font-size:20px;
-	padding:40px;
+ /*Style för formulär*/
+ .contact-us
+ {
+	 background-color: rgba(0, 128, 0, 0.308);
+	 color:white;
+	font-size:1.25em;
+	padding: 2.5em;;
 }
-
+#form {
+	margin:0;
+	background-color: grey;
+}
 .form-group{
-	padding:40px;
-	width: 100px;
+	padding: 2.5em;
+	width: 6.25em;
 }
 #form label{
 	display:block;
-	font-size:20px;
-	margin-bottom:10px;
+	font-size:1.25em;
+	margin-bottom:0.625em;
 }
 .form-group, input, textarea
 {
-	width:320px;
-	padding:10px;
-	font-size: 16px;
-	margin-bottom:8px;
+	width:20em;
+	padding:0.625em;
+	font-size: 1em;
+	margin-bottom:0.5em;
 }
 input, textarea
 {
-	border-radius: 5px;
+	border-radius: 0.3125em;
 	border:none;
 }
 
-.check-circle
-{
-	visibility: hidde;
-}
+input, textarea
 
 hr
 {
-	height: 2px;
-	width:340px;
+	height: 0.125;
+	width: 21.25em;;
 	background-color:rgba(0, 128, 0, 0.308);
 	border:none;
-	margin-bottom:20px;
-	margin-top:30px;
+	margin-bottom:1.25em;
+	margin:1.875em;
 }
 
 button
 {
-	padding:10px;
-	font-size:20px;
+	padding:0,625em;
+	font-size:1.25em;
 	background: none;
 	border:2px solid rgba(0, 128, 0, 0.308);
-	border-radius: 10px;
+	border-radius: 0.625;
 	transition: all 0.5s;
 	cursor: pointer;
 }
