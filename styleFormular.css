@@ -1,0 +1,119 @@
+
+#form
+{
+    background-color:grey;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin:0;
+}
+
+.container
+{
+    background-color: white;
+    border-radius:0.5em;
+    
+    width: 35em;
+    height: 50em;
+    overflow:hidden;
+}
+.rubrik
+{
+    background-color: #f7f7f7;
+    border-bottom:0.25em solid #f0f0f0d5;
+    padding: 1em 3em;
+}
+
+.form
+{
+    padding:2em 3em;
+}
+
+.form-controll
+{
+    margin-bottom:1em;
+    padding-bottom:1em;
+    position:relative;
+}
+.form-controll label
+{
+    display:inline-block;
+    margin-bottom:0.5em;
+}
+
+.form-controll input 
+{
+    border:2px solid #f0f0f0;
+    border-radius:4px;
+    display:block;
+    padding: 10px;
+    width:100%;
+    font-size: 20px;
+}
+.form-controll.success input 
+{
+   border-color:#2ecc71;
+}
+.form-controll.error input 
+{
+  border-color:#e74c3c;
+}
+
+.form-controll.success .valid
+{
+  visibility: visible;
+}
+.form-controll.error .invalid
+{
+  visibility: visible;
+}
+.form-controll small{
+    visibility:hidden;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.form-cotroll.error small
+{
+    color:#e74c3c;
+    visibility: visible;
+}
+
+
+
+#text
+{
+    border:2px solid #f0f0f0;
+    border-radius:4px;
+    display:block;
+    padding: 10px;
+    width:100%;
+    font-size: 20px;
+}
+.form-controll img{
+    width:1.5em;
+    position:absolute;
+    top:2.5em;
+    right:0.8em;
+    visibility: hidden;
+}
+
+#form button
+{
+    padding:0.6em;
+	font-size:1.25em;
+	background: rgba(128, 128, 128, 0.384);
+	border: 0.25em solid #f0f0f0d5;
+    width: 100%;
+	border-radius: 0.625;
+	transition: all 0.5s;
+	cursor: pointer;
+    border-radius: 0.7em;
+}
+button:hover
+{
+	background-color:rgba(0, 128, 0, 0.308);
+	border:red;
+	color:white;
+}

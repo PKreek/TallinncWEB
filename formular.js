@@ -1,45 +1,94 @@
+
+const form =document.getElementById("form");
+form.addEventListener("submit",(e)=>{
+e.preventDefault();
+
+});
+
+
+
+
 function valideringEmail()
 {
-    var email = document.getElementById("email").value
-    var emailChecken=document.getElementById("emailCheck")
-    var textEmail = document.getElementById("errorEmail")
-    
 
-
+    const email = document.getElementById("email").value.trim()
+    const emailChecken=document.getElementById("emailCheck")
+    const textEmail = document.getElementById("errorEmail")
     var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-    
-    console.log(form)
-    console.log(email);
 
 
+
+    console.log(textEmail)
+   
     if(email.match(pattern))
     {
        
-        emailChecken.classList.add("valid")
+        valideringOk(emailChecken,textEmail, "De går fint!")
+        /*emailChecken.classList.add("valid")
         emailChecken.classList.remove("invalid")
+        emailChecken.className="form-controll success"
         textEmail.innerHTML = "Du har anget en korrekt epost!";
-        textEmail.style.color= "#00ff00";
+        textEmail.style.color= "#00ff00";*/
+        
     }
     else
     {
-    emailChecken.classList.remove("valid")
-    emailChecken.classList.add("invalid")
-    textEmail.innerHTML = "Ange korrekt email";
-    textEmail.style.color= "#ff0000";
+        emailChecken.classList.remove("valid")
+        emailChecken.className="form-controll error"
+        
+      
+  
+   
     }
-if(email =="")
+    if(email ==="")
+    {
+        emailChecken.classList.remove("valid")
+        emailChecken.className="form-controll error"
+        emailChecken.classList.add("invalid")
+    
+        
+    }
+
+
+
+function valideringOk(typ, textEmail, meddelande)
 {
-    emailChecken.classList.remove("valid")
-    emailChecken.classList.add("invalid")
-    textEmail.innerHTML = "";
+    typ.classList.add("valid")
+    typ.classList.remove("invalid")
+    typ.className="form-controll success"
+    textEmail.innerHTML = (meddelande);
     textEmail.style.color= "#00ff00";
 }
+function valideingIckeOk(typ, textEmail, meddelande)
+{
+    const formControllen = typ.parentElement;
+    const small = typ.querySelector("small");
+
+    console.log(formControll)
+    console.log(small)
+
+    typ.classList.remove("valid")
+    typ.classList.add("invalid")
+    typ.className="form-controll error"
+    typ.style.display = "hidden"
+
+
+    textEmail.innerHTML = (meddelande);
+    textEmail.style.color= "#00ff00";
 }
+
+}
+
+
+
+
+
+
 
 
 function valideringNamn()
 {
-var name=document.getElementById("name").value
+var name=document.getElementById("name").value.trim()
 var nameCheck=document.getElementById("nameCheck")
 var textNamn=document.getElementById("errorNamn")
 
@@ -60,12 +109,12 @@ else
     textNamn.innerHTML="Du har angett ett tillåtet namn!"
     textNamn.style.color="#00ff00";
 }
-if(name =="")
+if(name ==="")
 {
     nameCheck.classList.remove("valid")
     nameCheck.classList.add("invalid")
-    textNamn.innerHTML = "";
-    textNamn.style.color= "#00ff00";
+    textNamn.innerHTML = "Rutan kan inte vara tom";
+    textNamn.style.color= "red";
 }
 }
 

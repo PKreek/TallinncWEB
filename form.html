@@ -3,7 +3,7 @@
 
 
     <head>
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="styleFormular.css">
         <script  defer src="formular.js" ></script>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,56 +16,59 @@
         
     <body id="form">
     
+    <div class ="container">
         
-        <div class="contact-us"> 
-            <h1>Contact us</h1>
-            <p1> We love to hear from you! Fill out the form and we will reach back as soon as posible </p1>
+        <div class="rubrik"> 
+            <h1>Kul att du vill kontakta oss!</h1>
+            <p1>Fyll i formuläret så återkommer vi så snart som möjligt! </p1>
         </div>
 
-
-
-
-            <form id="form" class="form"> 
-                <div class="form-group">
+            <form class="form"> 
+                <div class="form-controll">
                     <div id="nameCheck">
                         <label for="name">Namn:</label>
                         <input type ="text" name="name" id="name"onkeydown="valideringNamn()"/>
+                        <img src="bilder/valid.png" class ="valid"/>
+                        <img src="bilder/invalid.png" class="invalid"/>
                         <span id="errorNamn"></span>
                     </div>
-                 
-                    
-
+                </div>
+                <div class="form-controll">
                     <div> 
                         <label for="number">Nummer:</label>
                         <input type ="tel" name="number" id="number" value=""/>
                     </div>
+                </div>
 
-
-
+                <div class="form-controll">
                     <div id="emailCheck">
                         <label for ="email">Email:</label>
                         <input type ="email" name="email" id="email" onkeydown="valideringEmail()"/>
-                        <span id="errorEmail"></span>
+                        <small >Error message</small>
+                        <img src="bilder/valid.png" class ="valid"/>
+                        <img src="bilder/invalid.png" class="invalid"/>
                     </div>
+                </div>
 
-
-
-                    
-                    <div>
+                <div class="form-controll">
+                    <div id="textCheck">
                         <label for ="text">Text:</label>
                         <textarea name="text" id="text"></textarea>
                     </div>
-                    
-                
-        
-                </form>
-                    <hr />
-                    <button type="Reset">Reset</button>
-                    <button type="submit">Submit</button>
-    
                 </div>
-        </div>
-    </body>
+
+
+                    <hr />
+                    <button type="Reset" class="reset">Reset</button>
+                    <button type="submit"id="submit">Submit</button>
+    
+            </form>
+            
+    
+               
+        
+    </div>
+</body>
    
 
 </html>
