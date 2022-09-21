@@ -14,70 +14,48 @@
 		<title>No Balance</title>
 	</head>
 	<body>
-		<div id="app">
-			<header>
-				<div class="navbar">
-					<p id="logo">Sko<em>Xperterna</em></p>          
-					<ul>
-						<li><a href="omOss2.html">om oss</a></li>
-						<li><a href="form.html">kontakta oss</a></li>
-						<li><a href=".html">nyheter</a></li>	
-					</ul>
-					<div class="navicons">
-						<span class="material-symbols-outlined">
-							search 
-						</span>
-						<span class="material-symbols-outlined">
-							<div class="kundvagn-container">	
-								<p class="kundvagn-knapp" onclick="togglaKundvagn()">shopping_cart {{iKundvagn}}</p>
-								<div id ="kundvagn-meny">
-									<div v-for="sko in kundvagn">
-										<p>{{sko.namn}}</p>
-										<p>{{sko.pris}}</p>
-										<button @click="taBortSko">Ta bort</button>
-									</div>
-								</div>					
-							</div>
-							
-						</span>
-					</div>    
-				</div>
-			</header>
-			<div class="bakgrundsbild">
-				<img src="bilder/sneakerbakgrunden.png" />
-			</div>
-			<h2 id="news">Nyheter</h2>
-			<!-- Slideshow!!!!! --> 
-			<div id="bildspel">
-				<button class="bildspel-knapp prev" data-slideknapp="prev">&#8592;</button>
-				<button class="bildspel-knapp next" data-slideknapp="next">&#8594;</button>
-				<ul id="bildspel-lista">
-					<li class="slide" data-active="true"><img src="bilder/sko1.jpg" alt="något"><p class="bildcaption">Nike Air Zoom Alphafly <br> 3 339 kr</p></li>
-					<li class="slide"><img src="bilder/sko2.jpg" alt="något"><p class="bildcaption">Nike SuperRep Cycle 2 <br> 1 349 kr</p></li>
-					<li class="slide"><img src="bilder/sko3.jpg"alt="något"><p class="bildcaption">Nike ZoomX Vaporfly <br> 2 799 kr</p></li>
+		<header>
+			<div class="navbar">
+				<p id="logo">Sko<em>Xperterna</em></p>          
+				<ul>
+					<li><a href="omOss2.html">om oss</a></li>
+					<li><a href="form.html">kontakta oss</a></li>
+					<li><a href=".html">nyheter</a></li>	
 				</ul>
+				<div class="navicons">
+					<span class="material-symbols-outlined">
+						search 
+					</span>
+					<span class="material-symbols-outlined">
+						shopping_cart		
+					</span>
+				</div>    
 			</div>
-			<!-- Slut på Slideshow!!!!! -->
-			<h2 id="rubrikcontentbilder">Vilka skor ska man använda?</h2>
-			<p id="paragrafcontentbilder">Lär dig mer om vilka skor <em>du</em> ska använda
-				vid olika tillfällen av löpning och idrottande</p>
-			<div class="contentbilder">
-				<div class="columns">
-				<div><img src="bilder/stadslopning.jpg" alt="något" /><p>Stadslöpning</p></div>
-				<div><img src="bilder/terrang.jpg" alt="något" /><p>Terränglöpning</p></div>
-				<div><img src="bilder/fridrott.jpg" alt="något" /><p>Fridrott</p></div>
-				</div>
+		</header>
+		<div class="bakgrundsbild">
+			<img src="bilder/sneakerbakgrunden.png" />
+		</div>
+		<h2 id="news">Nyheter</h2>
+		<!-- Slideshow!!!!! --> 
+		<div id="bildspel">
+			<button class="bildspel-knapp prev" data-slideknapp="prev">&#8592;</button>
+			<button class="bildspel-knapp next" data-slideknapp="next">&#8594;</button>
+			<ul id="bildspel-lista">
+				<li class="slide" data-active="true"><img src="bilder/sko1.jpg" alt="något"><p class="bildcaption">Nike Air Zoom Alphafly <br> 3 339 kr</p></li>
+				<li class="slide"><img src="bilder/sko2.jpg" alt="något"><p class="bildcaption">Nike SuperRep Cycle 2 <br> 1 349 kr</p></li>
+				<li class="slide"><img src="bilder/sko3.jpg"alt="något"><p class="bildcaption">Nike ZoomX Vaporfly <br> 2 799 kr</p></li>
+			</ul>
+		</div>
+		<!-- Slut på Slideshow!!!!! -->
+		<h2 id="rubrikcontentbilder">Vilka skor ska man använda?</h2>
+		<p id="paragrafcontentbilder">Lär dig mer om vilka skor <em>du</em> ska använda
+			vid olika tillfällen av löpning och idrottande</p>
+		<div class="contentbilder">
+			<div class="columns">
+			<div><img src="bilder/stadslopning.jpg" alt="något" /><p>Stadslöpning</p></div>
+			<div><img src="bilder/terrang.jpg" alt="något" /><p>Terränglöpning</p></div>
+			<div><img src="bilder/fridrott.jpg" alt="något" /><p>Fridrott</p></div>
 			</div>
-			<!-- Webshop!!!!! -->
-			<div>
-				<div v-for="sko in skor">
-					<img :src="sko.bild">
-					<p>{{sko.namn}}</p>
-					<p>{{sko.pris}}</p>
-					<button @click="kopSko(sko)">KÖP</button>
-				</div>
-			</div> 
-			<!-- Slut på webshop!!!!! --> 
 		</div>
 	</body>
 </html>
