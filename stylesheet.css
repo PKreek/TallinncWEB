@@ -88,6 +88,7 @@ body {
 
 #rubrikcontentbilder{
 	margin-top: 8rem;
+	margin-bottom: 0;
 	text-align: center;
 	font-size: 350%;
 	font-weight: bolder;
