@@ -4,7 +4,7 @@ const slideButtons = document.querySelectorAll("[data-slideknapp]");
 const slides = document.querySelector("#bildspel-lista");
 let activeSlide = document.querySelector("[data-active]");
 let slideTimer;
-const slideIntervalMillis = 3000; //hur lång tid mellan varje slide i milliesekunder 
+const slideIntervalMillis = 5000; //hur lång tid mellan varje slide i milliesekunder 
 
 slideButtons.forEach((button) => {
     button.addEventListener("click", () => {
