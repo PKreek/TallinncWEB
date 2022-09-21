@@ -12,9 +12,9 @@
         <title>Formulär</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>  
-
-    <body>
-        <div id="form">
+    
+    <body id="form">
+       
         <div class="contact-us"> 
             <h1>Contact us</h1>
             <p1> We love to hear from you! Fill out the form and we will reach back as soon as posible </p1>
@@ -25,52 +25,35 @@
 
             <form id="form" class="form"> 
                 <div class="form-group">
-                    <label for="name">Namn:</label>
-                    <input type ="text" name="name" id="name"/>
                     
-                    
-                    <div class="check-circle">
-                        <i class="material-symbols-outlined">
-                        check_circle
-                        </i>
-                        <i class="material-symbols-outlined" >
-                        cancel
-                        </i>
-                        <small>Error message</small>
+                    <div id="nameCheck">
+                        <label for="name">Namn:</label>
+                        <input type ="text" name="name" id="name"onkeydown="valideringNamn()"/>
+                        <span id="errorNamn"></span>
                     </div>
-                
                     
-
                     <div> 
                         <label for="number">Nummer:</label>
                         <input type ="tel" name="number" id="number" value=""/>
                     </div>
 
-
-
-                    <div class = "a">
+                    <div id="emailCheck">
                         <label for ="email">Email:</label>
-                        <input type ="email" name="email" id="email" onkeydown="validering()"/>
+                        <input type ="email" name="email" id="email" onkeydown="valideringEmail()"/>
+                   <span id="errorEmail"></span>
                     </div>
-
-
-
-                    
+ 
                     <div>
                         <label for ="text">Text:</label>
                         <textarea name="text" id="text"></textarea>
                     </div>
-                    
-                
+            
         
                 </form>
                     <hr />
                     <button type="Reset">Reset</button>
                     <button type="submit">Submit</button>
-    
                 </div>
-        </div>
+        
     </body>
-   
-
 </html>
