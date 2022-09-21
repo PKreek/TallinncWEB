@@ -100,14 +100,14 @@ body {
 
 /* om oss design*/
 .vi img{
-	width: 15.625em;
-	margin-left: -3.125em;
-	margin-top:1.5625em;
+	width: 250px;
+	margin-left: -50px;
+	margin-top:25px;
 }
 .text
 {
-	width: 3.125em;
-	padding-bottom:15.625em;
+	width: 250px;
+	padding-bottom:25px;
 	
 }
 .nav-main
@@ -123,11 +123,11 @@ body {
 .omOssRubrik
 {
     
-	font-size: 1.875em;
+	font-size: 30px;
 }
 .om-oss-text
 {
-	font-size:1.25em;
+	font-size:20px;
 }
 .vi
 {
@@ -137,13 +137,13 @@ body {
 }
 li img{
 	list-style:none;
-	line-height: 3.75em;
-	padding: left 3.125em;;
+	line-height:60px;
+	padding-left:50px;
     display:flex;
-	height: 12.5em;
+	height: 200px;
     color: #111;
     font-family:arial;
-    font-size:1em;
+    font-size:16px;
 	
 }
 
@@ -153,32 +153,32 @@ li img{
 {
 	background-color: rgba(0, 128, 0, 0.308);
 	color:white;
-	font-size:1.25em;
-	padding: 2.5em;;
+	font-size:20px;
+	padding:40px;
 }
-#form {
+#form body{
 	margin:0;
 	background-color: grey;
 }
 .form-group{
-	padding: 2.5em;
-	width: 6.25em;
+	padding:40px;
+	width: 100px;
 }
 #form label{
 	display:block;
-	font-size:1.25em;
-	margin-bottom:0.625em;
+	font-size:20px;
+	margin-bottom:10px;
 }
 .form-group, input, textarea
 {
-	width:20em;
-	padding:0.625em;
-	font-size: 1em;
-	margin-bottom:0.5em;
+	width:320px;
+	padding:10px;
+	font-size: 16px;
+	margin-bottom:8px;
 }
 input, textarea
 {
-	border-radius: 0.3125em;
+	border-radius: 5px;
 	border:none;
 }
 
@@ -189,21 +189,21 @@ input, textarea
 
 hr
 {
-	height: 0.125;
-	width: 21.25em;;
+	height: 2px;
+	width:340px;
 	background-color:rgba(0, 128, 0, 0.308);
 	border:none;
-	margin-bottom:1.25em;
-	margin:1.875em;
+	margin-bottom:20px;
+	margin-top:30px;
 }
 
 button
 {
-	padding:0,625em;
-	font-size:1.25em;
+	padding:10px;
+	font-size:20px;
 	background: none;
 	border:2px solid rgba(0, 128, 0, 0.308);
-	border-radius: 0.625;
+	border-radius: 10px;
 	transition: all 0.5s;
 	cursor: pointer;
 }
