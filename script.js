@@ -26,11 +26,22 @@ slideButtons.forEach((button) => {
 //SlUT PÅ BILDSPEL
 
 //WEBSHOP
+
+const togglaKundvagn = (()=>{
+    const kundvagnen = document.getElementById("kundvagn-meny");
+    if(kundvagnen.style.display === "block"){
+        kundvagnen.style.display = "none";
+    }else{
+        kundvagnen.style.display = "block";
+    }
+});
+
 const { createApp } = Vue
 
 const app = createApp ({
     data() {
         return {
+            iKundvagn: 0,
             kundvagn: [],
             skor: [
                 {
@@ -45,5 +56,15 @@ const app = createApp ({
                 }
             ]
         }
+    },
+    methods: {
+        kopSko(sko) {
+            this.kundvagn.push(sko);
+            this.iKundvagn++;
+        },
+        taBortSko(sko) {
+            this.kundvagn.splice(sko.indexOf,1);
+            this.iKundvagn--;
+        }
     }
-}).mount('#app') 
+}).mount('#app'); 
