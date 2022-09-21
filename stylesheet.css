@@ -14,7 +14,6 @@ body {
 	background: white;
     border-bottom: solid black;
 	justify-content: space-between;
-	position: fixed;
 	z-index: 3;
 }
 .navbar ul li {
@@ -106,10 +105,8 @@ body {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
     padding: 1rem;
-    text-align: center;
-	
+    text-align: center;	
 }
-
 .contentbilder img {
 	cursor: pointer;
 	width: 70%;
@@ -174,8 +171,8 @@ li img{
 
  .contact-us
  {
-	 background-color: rgba(0, 128, 0, 0.308);
-	 color:white;
+	background-color: rgba(0, 128, 0, 0.308);
+	color:white;
 	font-size:1.25em;
 	padding: 2.5em;;
 }
