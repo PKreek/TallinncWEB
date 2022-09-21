@@ -170,6 +170,7 @@ li img{
 	
 }
  /*Style för formulär*/
+
  .contact-us
  {
 	 background-color: rgba(0, 128, 0, 0.308);
@@ -203,16 +204,16 @@ input, textarea
 	border:none;
 }
 
-input, textarea
+
 
 hr
 {
 	height: 0.125;
 	width: 21.25em;;
 	background-color:rgba(0, 128, 0, 0.308);
-	border:none;
+	
 	margin-bottom:1.25em;
-	margin:1.875em;
+	margin-top:1.875em;
 }
 
 button
