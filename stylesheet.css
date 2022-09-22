@@ -1,4 +1,4 @@
-
+/*STARTSIDA*/
 body {
 	margin: 0;
 	background-color: white;
@@ -130,6 +130,23 @@ body {
 .contentbilder img:hover{
 	transform:scale(1.1);
 }
+
+.footer-nav{
+	margin-top: 10rem;
+	height: 10rem;
+	background-color: black;
+}
+.footer-nav p{
+	float: left;
+    color: white;
+	margin-left: 5%;
+	margin-top: 4rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: xx-large;
+	font-weight:bolder;
+
+}
+/* STARTSIDA SLUT*/
 
 
 /* om oss design*/
