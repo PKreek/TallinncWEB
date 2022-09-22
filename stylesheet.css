@@ -70,6 +70,11 @@ body {
 	font-size: x-large;
 }
 
+#logo a{
+	text-decoration: none;
+	color: white;
+}
+
 #logo em{
 	color:white
 }
@@ -98,6 +103,11 @@ body {
 #paragrafcontentbilder{
 	text-align: center;
 	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.columns p {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 500;
 }
 
 .columns{
