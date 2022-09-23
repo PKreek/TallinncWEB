@@ -195,6 +195,15 @@ body {
 .kolumner-items ul li{
 	list-style: none;
 	margin-top: 1rem;
+	cursor: pointer;
+}
+.kolumner-items ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+.kolumner-items ul li:hover{
+	transform:scale(1.03);
 }
 .kolumner-logos{
 	color: white;
