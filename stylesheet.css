@@ -88,9 +88,10 @@ body {
     object-fit: contain;
 }
 #news{
-	margin-top: 5rem;
-	padding-left: 1rem;
-	font-weight: 300;
+	margin-top: 10rem;
+	text-align: center;
+	font-weight: 600;
+	font-size: x-large;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
