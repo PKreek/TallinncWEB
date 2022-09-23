@@ -64,7 +64,10 @@
                     <img :src="sko.bild">
                     <p>{{sko.namn}}</p>
                     <p>{{sko.pris}}</p>
-                    <button @click="kopSko(sko)">KÖP</button>
+                    <button @click="taBortSko">Ta bort</button>
+                </div>
+                <div>
+                    <p>{{totalSumma}}</p>
                 </div>
                 <button @click="checkaUt = false">Gå tillbaka</button>
             </div>

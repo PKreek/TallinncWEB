@@ -80,6 +80,13 @@ const app = createApp ({
             ]
         }
     },
+    computed: {
+        totalSumma() {
+            summa = this.kundvagn.forEach(sko=>{
+                return sko.pris;
+            })
+        }
+    },
     methods: {
         kopSko(sko) {
             this.kundvagn.push(sko);
