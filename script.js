@@ -21,22 +21,22 @@ const app = createApp ({
             skor: [
                 {
                     namn: "En sko",
-                    pris: "1199",
+                    pris: 1199,
                     bild: "bilder/sko1.jpg"
                 },
                 {
                     namn: "En annan sko",
-                    pris: "1199",
+                    pris: 1199,
                     bild: "bilder/sko2.jpg"
                 },
                 {
                     namn: "En tredje sko",
-                    pris: "2199",
+                    pris: 2199,
                     bild: "bilder/sko3.jpg"
                 },
                 {
                     namn: "Ännu en sko",
-                    pris: "2399",
+                    pris: 2399,
                     bild: "bilder/sko3.jpg"
                 }
             ]
@@ -44,11 +44,10 @@ const app = createApp ({
     },
     computed: {
         totalSumma() {
-            summa = this.kundvagn.forEach(sko=>{
-                console.log(sko)
-                return sko.pris;
-            })
-            console.log(summa)
+            let summa = 0;
+            this.kundvagn.forEach(sko=>{
+                summa += sko.pris;
+            });
             return summa;
         }
     },
