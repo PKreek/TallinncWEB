@@ -53,6 +53,7 @@ const { createApp } = Vue
 const app = createApp ({
     data() {
         return {
+            checkaUt: false,
             iKundvagn: 0,
             kundvagn: [],
             skor: [

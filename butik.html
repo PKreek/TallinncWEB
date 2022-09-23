@@ -29,12 +29,17 @@
                         <div class="kundvagn-container">	
                             <p class="kundvagn-knapp" onclick="togglaKundvagn()">shopping_cart {{iKundvagn}}</p>
                             <div id ="kundvagn-meny">
-                                <div v-for="sko in kundvagn">
-                                    <p>{{sko.namn}}</p>
-                                    <p>{{sko.pris}}</p>
-                                    <button @click="taBortSko">Ta bort</button>
+                                <div v-if="iKundvagn > 0">
+                                    <div v-for="sko in kundvagn">
+                                        <p>{{sko.namn}}</p>
+                                        <p>{{sko.pris}}</p>
+                                        <button @click="taBortSko">Ta bort</button>
+                                    </div>
+                                    <button @click="checkaUt = true" onclick="togglaKundvagn()">Checka ut</button>
                                 </div>
-                                <button><a href="checkaut.html">Checka ut</a></button>
+                                <div v-else>
+                                    <p>Kundvagnen är tom</p>
+                                </div>
                             </div>					
                         </div>
                         
@@ -43,14 +48,27 @@
             </div>
         </header>
         <!-- Webshop!!!!! -->
-        <div  class="skor">
-            <div v-for="sko in skor">
-                <img :src="sko.bild">
-                <p>{{sko.namn}}</p>
-                <p>{{sko.pris}}</p>
-                <button @click="kopSko(sko)">KÖP</button>
+        <div v-if="checkaUt === false">
+            <div  class="skor">
+                <div v-for="sko in skor">
+                    <img :src="sko.bild">
+                    <p>{{sko.namn}}</p>
+                    <p>{{sko.pris}}</p>
+                    <button @click="kopSko(sko)">KÖP</button>
+                </div>
+            </div> 
+        </div>
+        <div v-if="checkaUt === true">
+            <div class="betalning">
+                <div v-for="sko in kundvagn">
+                    <img :src="sko.bild">
+                    <p>{{sko.namn}}</p>
+                    <p>{{sko.pris}}</p>
+                    <button @click="kopSko(sko)">KÖP</button>
+                </div>
+                <button @click="checkaUt = false">Gå tillbaka</button>
             </div>
-        </div> 
+        </div>
     </div>
 </body>
 </html>
