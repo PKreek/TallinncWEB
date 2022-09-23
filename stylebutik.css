@@ -1,3 +1,8 @@
+.skor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 /*Kundvagnen*/
 .kundvagn-container {
 	position: relative;
