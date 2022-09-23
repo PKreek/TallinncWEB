@@ -35,7 +35,7 @@
                                         <p>{{sko.pris}}</p>
                                         <button @click="taBortSko">Ta bort</button>
                                     </div>
-                                    <button @click="checkaUt = true" onclick="togglaKundvagn()">Checka ut</button>
+                                    <button @click="checkaUt = true" onclick="togglaKundvagn()">Till kassan</button>
                                 </div>
                                 <div v-else>
                                     <p>Kundvagnen är tom</p>
@@ -69,10 +69,28 @@
                             <button @click="taBortSko">Ta bort</button>
                         </div>  
                     </div>
+                    <div>
+                        <p>Totalsumma: {{totalSumma}}</p>
+                        <button @click="checkaUt = false">Gå tillbaka</button>
+                    </div>
                 </div>
-                <div>
-                    <p>Totalsumma: {{totalSumma}}</p>
-                    <button @click="checkaUt = false">Gå tillbaka</button>
+                <div v-if="inloggad===false">
+                    <form>
+                        <label>Användarnamn:</label><br>
+                        <input type="text" id="inloggning-anvandarnamn"><br>
+                        <label>Lösenord:</label><br>
+                        <input type="text">
+                    </form>
+                    <button @click="loggaIn()">Logga in</button>
+                    <p>Ny kund? Klicka här</p>
+                </div>
+                <div v-else>
+                    <form>
+                        <label>Namn:</label><br>
+                        <input type="text" id="inloggning-anvandarnamn"><br>
+                        <label>Adress:</label><br>
+                        <input type="text">
+                    </form>
                 </div>
             </div>    
         </div>
