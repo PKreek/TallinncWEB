@@ -3,6 +3,24 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.betalning {
+}
+
+.betalning-sida {
+	margin: 10vw;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.checka-ut-lista {
+    display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.betalning-bild {
+	width: 10vw;
+}
+
 /*Kundvagnen*/
 .kundvagn-container {
 	position: relative;
