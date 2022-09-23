@@ -332,19 +332,7 @@ ul li p {
 }
 /*SlutBildspel*/
 
-/*Kundvagnen*/
-.kundvagn-container {
-	position: relative;
-	display: inline-block;
-}
 
-#kundvagn-meny {
-	display: none;
-	z-index: 5;
-	position: absolute;
-	background-color: aliceblue;
-	right: 0;
-}
 
 
 	
