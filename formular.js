@@ -1,122 +1,109 @@
-
 const form =document.getElementById("form");
-form.addEventListener("submit",(e)=>{
-e.preventDefault();
-
-});
-
-
-
-
-function valideringEmail()
-{
-
-    const email = document.getElementById("email").value.trim()
-    const emailChecken=document.getElementById("emailCheck")
-    const textEmail = document.getElementById("errorEmail")
-    var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-
-
-
-    console.log(textEmail)
-   
-    if(email.match(pattern))
-    {
-       
-        valideringOk(emailChecken,textEmail, "De går fint!")
-        /*emailChecken.classList.add("valid")
-        emailChecken.classList.remove("invalid")
-        emailChecken.className="form-controll success"
-        textEmail.innerHTML = "Du har anget en korrekt epost!";
-        textEmail.style.color= "#00ff00";*/
-        
-    }
-    else
-    {
-        emailChecken.classList.remove("valid")
-        emailChecken.className="form-controll error"
-        
-      
-  
-   
-    }
-    if(email ==="")
-    {
-        emailChecken.classList.remove("valid")
-        emailChecken.className="form-controll error"
-        emailChecken.classList.add("invalid")
-    
-        
-    }
-
-
-
-function valideringOk(typ, textEmail, meddelande)
-{
-    typ.classList.add("valid")
-    typ.classList.remove("invalid")
-    typ.className="form-controll success"
-    textEmail.innerHTML = (meddelande);
-    textEmail.style.color= "#00ff00";
-}
-function valideingIckeOk(typ, textEmail, meddelande)
-{
-    const formControllen = typ.parentElement;
-    const small = typ.querySelector("small");
-
-    console.log(formControll)
-    console.log(small)
-
-    typ.classList.remove("valid")
-    typ.classList.add("invalid")
-    typ.className="form-controll error"
-    typ.style.display = "hidden"
-
-
-    textEmail.innerHTML = (meddelande);
-    textEmail.style.color= "#00ff00";
-}
-
-}
-
-
-
-
-
+const  email =document.getElementById("email")
+const namn = document.getElementById("namn")
+const tele = document.getElementById("number")
+const text = document.getElementById("text")
 
 
 
 function valideringNamn()
 {
-var name=document.getElementById("name").value.trim()
-var nameCheck=document.getElementById("nameCheck")
-var textNamn=document.getElementById("errorNamn")
+    
+    const nameValue =namn.value
 
-console.log(name);
-if(name.length > 30 )
-{
-    console.log(30);
-    nameCheck.classList.remove("valid")
-    nameCheck.classList.add("invalid")
-    textNamn.innerHTML="Max antal ord är 30. Vänligen ange inte fler"
-    textNamn.style.color="#ff0000";
+    if(nameValue==='')
+    {
+        setErrorFor(namn,'Namn kan inte vara blank')
+    }
+    else if(nameValue.length >=40)
+    {
+        setErrorFor(namn,'För långt namn')
+    }
+    else{
+        setSuccessFor(namn)
+    }
 }
 
-else
+function valideringEmail()
 {
-    nameCheck.classList.add("valid")
-    nameCheck.classList.remove("invalid")
-    textNamn.innerHTML="Du har angett ett tillåtet namn!"
-    textNamn.style.color="#00ff00";
+    const emailValue = email.value  
+
+    var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    if(emailValue==='')
+    {
+        setErrorFor(email,'Email kan inte vara blank')
+    }
+    else if (emailValue.match(pattern))
+    {
+        setSuccessFor(email)
+    }
+    else{
+        setErrorFor(email,'Inte tillåten email')
+    }
 }
-if(name ==="")
+
+function valideringNumber()
 {
-    nameCheck.classList.remove("valid")
-    nameCheck.classList.add("invalid")
-    textNamn.innerHTML = "Rutan kan inte vara tom";
-    textNamn.style.color= "red";
+    const teleValue = tele.value
+    const phone = /^[\d,\s,\+,\-]{5,15}/;
+    if(teleValue.length>=16)
+    {
+        console.log(55)
+        setErrorFor(number,'För långt nummer')
+        
+    }
+   else if(teleValue.match(phone))
+        {
+        setSuccessFor(number)
+        console.log(577)
+    }
+    else if(teleValue==='')
+    {
+        console.log(22)
+        setErrorFor(number,'Nummer kan inte vara blank')
+    }
 }
+function valideringText()
+{
+    const textValue = text.value
+    if (textValue==='')
+    {
+        console.log(22)
+        setErrorFor(text,'Textruta kan inte vara blank')
+    }
+    else
+    {
+        setSuccessFor(text)
+    }
 }
+
+
+function setErrorFor(input, message){
+    const formControl = input.parentElement;
+    console.log(formControl) 
+    const small = formControl.querySelector('small');
+    small.innerText = message;
+    formControl.className="form-control error";  
+    
+
+}
+function setSuccessFor(input){
+    const formControl = input.parentElement;
+    formControl.className="form-control success"; 
+    const small = formControl.querySelector('small');
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

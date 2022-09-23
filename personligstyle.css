@@ -1,7 +1,8 @@
-.bild {
-	width: 30%;
-	height: 50%;
+.bild img{
+	width: 70%;
+	height: 100%;
     flex-basis: 40%;
+    margin-top: 5rem;
 }
 
 .namnrubrik{

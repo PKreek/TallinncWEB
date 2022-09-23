@@ -1,23 +1,11 @@
 
 //WEBSHOP
 
-const kundLista = []
+//const kundLista = []
 
-    fetch('https://jsonplaceholder.typicode.com/users')
-    .then(res => res.json())
-    .then(data => {
-        data.forEach(e => {
-            username = e.userId;
-            kundLista.push({
-                username: e.username,
-                name: e.name,
-                email: e.email,
-                address: e.address
-            });
-        });
-    });
+    
 
-    console.log(kundLista)
+    
 
 const togglaKundvagn = (()=>{
     const kundvagnen = document.getElementById("kundvagn-meny");
@@ -35,6 +23,7 @@ const app = createApp ({
         return {
             checkaUt: false,
             inloggad: false,
+            kundLista: [],
             iKundvagn: 0,
             kundvagn: [],
             skor: [
@@ -81,6 +70,23 @@ const app = createApp ({
         },
         loggaIn() {
             this.inloggad = true;
+        },
+        hamtaKunder() {
+            fetch('https://jsonplaceholder.typicode.com/users')
+            .then(res => res.json())
+            .then(data => {
+                data.forEach(e => {
+                    this.kundLista.push({
+                        username: e.username,
+                        name: e.name,
+                        email: e.email,
+                        address: e.address
+                    });
+                });
+            });
         }
+    },
+    created() {
+        this.hamtaKunder();
     }
 }).mount('#app'); 
