@@ -30,19 +30,19 @@
     padding:2em 3em;
 }
 
-.form-controll
+.form-control
 {
     margin-bottom:1em;
     padding-bottom:1em;
     position:relative;
 }
-.form-controll label
+.form-control label
 {
     display:inline-block;
     margin-bottom:0.5em;
 }
 
-.form-controll input 
+.form-control input 
 {
     border:2px solid #f0f0f0;
     border-radius:4px;
@@ -51,30 +51,33 @@
     width:100%;
     font-size: 20px;
 }
-.form-controll.success input 
+.form-control.success input 
 {
    border-color:#2ecc71;
 }
-.form-controll.error input 
+.form-control.error input 
 {
   border-color:#e74c3c;
 }
 
-.form-controll.success .valid
+
+
+.form-control.success .valid
 {
   visibility: visible;
 }
-.form-controll.error .invalid
+.form-control.error .invalid
 {
   visibility: visible;
+  
 }
-.form-controll small{
+.form-control small{
     visibility:hidden;
     position:absolute;
     bottom:0;
     left:0;
 }
-.form-cotroll.error small
+.form-control.error small
 {
     color:#e74c3c;
     visibility: visible;
@@ -91,7 +94,7 @@
     width:100%;
     font-size: 20px;
 }
-.form-controll img{
+.form-control img{
     width:1.5em;
     position:absolute;
     top:2.5em;

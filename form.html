@@ -24,39 +24,47 @@
         </div>
 
             <form class="form"> 
-                <div class="form-controll">
-                    <div id="nameCheck">
-                        <label for="name">Namn:</label>
-                        <input type ="text" name="name" id="name"onkeydown="valideringNamn()"/>
-                        <img src="bilder/valid.png" class ="valid"/>
-                        <img src="bilder/invalid.png" class="invalid"/>
-                        <span id="errorNamn"></span>
-                    </div>
-                </div>
-                <div class="form-controll">
-                    <div> 
-                        <label for="number">Nummer:</label>
-                        <input type ="tel" name="number" id="number" value=""/>
-                    </div>
+                
+                <div class="form-control">
+            
+                    <label for="namn">Namn:</label>
+                    <input type ="text" name="namn" id="namn"onkeydown="valideringNamn()"/>
+                    <img src="bilder/valid.png" class ="valid"/>
+                    <img src="bilder/invalid.png" class="invalid"/>
+                    <small></small>
                 </div>
 
-                <div class="form-controll">
-                    <div id="emailCheck">
-                        <label for ="email">Email:</label>
-                        <input type ="email" name="email" id="email" onkeydown="valideringEmail()"/>
-                        <small >Error message</small>
-                        <img src="bilder/valid.png" class ="valid"/>
-                        <img src="bilder/invalid.png" class="invalid"/>
-                    </div>
+             
+                <div class="form-control">
+                    
+                    <label for="number">Nummer:</label>
+                    <input type ="tel" name="number" id="number" value="" onkeydown="valideringNumber()"/>
+                    <img src="bilder/valid.png" class ="valid"/>
+                    <img src="bilder/invalid.png" class="invalid"/>
+                    <small></small>
+                
                 </div>
 
-                <div class="form-controll">
+
+
+                <div class="form-control">
+                
+                    <label for ="email">Email:</label>
+                    <input type ="email" name="email" id="email" onkeydown="valideringEmail()"/>
+                    <img src="bilder/invalid.png" class="invalid"/>
+                    <img src="bilder/valid.png" class ="valid"/>
+                    <small></small>
+                
+                </div>
+
+                <div class="form-control">
                     <div id="textCheck">
-                        <label for ="text">Text:</label>
-                        <textarea name="text" id="text"></textarea>
+                        <label for ="text" >Text:</label>
+                        <textarea name="text" id="text" onkeydown="valideringText()"></textarea>
+                        <img src="bilder/invalid.png" class="invalid"/>
+                        <small></small>
                     </div>
                 </div>
-
 
                     <hr />
                     <button type="Reset" class="reset">Reset</button>
