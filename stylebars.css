@@ -1,12 +1,14 @@
 .skillBar {
     height: 100%;
     background-color: blue;
+    
 }
 
 .skillBarContainer {
     width: 200px;
     height: 20px;
     background-color: black;
+    
 }
 
 
