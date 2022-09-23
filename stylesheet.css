@@ -23,6 +23,7 @@ body {
 	display: inline-block;
 	margin: 0 20px;
 	position: relative;
+	text-align: center;
 }
 
 .navbar ul li a {
@@ -90,7 +91,7 @@ body {
 	margin-top: 5rem;
 	padding-left: 1rem;
 	font-weight: 300;
-	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #rubrikcontentbilder{
@@ -131,21 +132,78 @@ body {
 	transform:scale(1.1);
 }
 
-.footer-nav{
+.footer-medlem{
 	margin-top: 10rem;
 	height: 10rem;
-	background-color: black;
+	background-color: lightgrey;
+	margin-left: 8%;
+	margin-right: 8%;
 }
-.footer-nav p{
+.footer-medlem p{
 	float: left;
-    color: white;
+    color: black;
 	margin-left: 5%;
 	margin-top: 4rem;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: xx-large;
 	font-weight:bolder;
-
 }
+
+.medlemsknapp{
+	float: right;
+	margin-right: 5%;
+	margin-top: 4rem;
+	border-radius: 1em;
+	background-color: black;
+	color: white;
+	border-color: black;
+	font-size: x-large;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	font-weight:500;
+	padding: 0.5%;
+	
+}
+
+.medlemsknapp:hover{
+	color: white;
+	background-color: black;
+	border-color: black;
+}
+
+.footer-nav{
+	background-color: black;
+	height: 18rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 0;
+	margin: 0;
+	padding: 1rem;
+	justify-items: center;
+	
+}
+
+.kolumner-items{
+	color: white;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	
+}
+
+#butiksid{
+	font-size: x-large;
+	text-transform: uppercase;
+}
+
+#logofooter{
+	font-size: x-large;
+	
+}
+
+#hjälpid{
+	text-transform: uppercase;
+	font-size: x-large;
+}
+
 /* STARTSIDA SLUT*/
 
 
