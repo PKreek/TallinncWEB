@@ -84,6 +84,14 @@
                     <button @click="loggaIn()">Logga in</button>
                     <p>Ny kund? Klicka här</p>
                 </div>
+                <div v-else>
+                    <form>
+                        <label>Namn:</label><br>
+                        <input type="text" id="inloggning-anvandarnamn"><br>
+                        <label>Adress:</label><br>
+                        <input type="text">
+                    </form>
+                </div>
             </div>    
         </div>
     </div>
