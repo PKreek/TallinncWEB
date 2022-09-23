@@ -1,10 +1,4 @@
 
-//BILDSPEL
-
-
-
-//SlUT PÅ BILDSPEL
-
 //WEBSHOP
 
 const togglaKundvagn = (()=>{
@@ -51,8 +45,11 @@ const app = createApp ({
     computed: {
         totalSumma() {
             summa = this.kundvagn.forEach(sko=>{
+                console.log(sko)
                 return sko.pris;
             })
+            console.log(summa)
+            return summa;
         }
     },
     methods: {
