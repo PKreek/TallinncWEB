@@ -34,6 +34,7 @@ const app = createApp ({
     data() {
         return {
             checkaUt: false,
+            inloggad: false,
             iKundvagn: 0,
             kundvagn: [],
             skor: [
@@ -77,6 +78,9 @@ const app = createApp ({
         taBortSko(sko) {
             this.kundvagn.splice(sko.indexOf,1);
             this.iKundvagn--;
+        },
+        loggaIn() {
+            this.inloggad = true;
         }
     }
 }).mount('#app'); 
