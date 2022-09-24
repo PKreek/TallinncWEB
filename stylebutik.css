@@ -3,9 +3,6 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.betalning {
-}
-
 .betalning-sida {
 	margin: 10vw;
 	display: grid;
