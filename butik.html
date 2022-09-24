@@ -75,21 +75,26 @@
                     </div>
                 </div>
                 <div v-if="inloggad===false">
-                    <form>
-                        <label>Användarnamn:</label><br>
-                        <input type="text" id="inloggning-anvandarnamn"><br>
-                        <label>Lösenord:</label><br>
-                        <input type="text">
-                    </form>
-                    <button @click="loggaIn()">Logga in</button>
+                    <label>Användarnamn:</label><br>
+                    <input v-model="inloggNamn">
+                    <p>{{inloggMeddelande}}</p>
+                    <label>Lösenord:</label><br>
+                    <input type="text">
+                    <button @click="loggaIn(inloggNamn)">Logga in</button>
                     <p>Ny kund? Klicka här</p>
                 </div>
                 <div v-else>
                     <form>
                         <label>Namn:</label><br>
-                        <input id="inloggning-anvandarnamn" v-model="message" :placeholder="[[kundLista[0].name]]"><br>
-                        <label>Adress:</label><br>
-                        <input type="text">
+                        <input v-model="kundLista[inloggadId].name"><br>
+                        <label>Gata:</label><br>
+                        <input v-model="kundLista[inloggadId].address.street"><br>
+                        <label>Postnummer:</label><br>
+                        <input v-model="kundLista[inloggadId].address.zipcode"><br>
+                        <label>Ort:</label><br>
+                        <input v-model="kundLista[inloggadId].address.city"><br>
+                        <label>E-post:</label><br>
+                        <input v-model="kundLista[inloggadId].email"><br>
                     </form>
                 </div>
             </div>    

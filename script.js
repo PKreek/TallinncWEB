@@ -23,6 +23,9 @@ const app = createApp ({
         return {
             checkaUt: false,
             inloggad: false,
+            inloggNamn: "",
+            inloggadId: "",
+            inloggMeddelande: "",
             kundLista: [],
             iKundvagn: 0,
             kundvagn: [],
@@ -68,8 +71,15 @@ const app = createApp ({
             this.kundvagn.splice(sko.indexOf,1);
             this.iKundvagn--;
         },
-        loggaIn() {
-            this.inloggad = true;
+        loggaIn(user) {
+            this.kundLista.forEach(e =>{
+                if(e.username===user){
+                    this.inloggadId = this.kundLista.indexOf(e);
+                    this.inloggad = true;
+                }else{
+                    this.inloggMeddelande = "Anvädarnamnet hittades inte";
+                }
+            })   
         },
         hamtaKunder() {
             fetch('https://jsonplaceholder.typicode.com/users')
