@@ -14,7 +14,7 @@ const togglaKundvagn = (()=>{
     }else{
         kundvagnen.style.display = "block";
     }
-});
+})
 
 const { createApp } = Vue
 
@@ -91,12 +91,12 @@ const app = createApp ({
                         name: e.name,
                         email: e.email,
                         address: e.address
-                    });
-                });
-            });
+                    })
+                })
+            })
         }
     },
     created() {
-        this.hamtaKunder();
+        this.hamtaKunder()
     }
-}).mount('#app'); 
+}).mount('#app')

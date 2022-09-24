@@ -7,10 +7,9 @@ const slideIntervalMillis = 5000; //hur lång tid mellan varje slide i milliesek
 slideButtons.forEach((button) => {
     button.addEventListener("click", () => {
         const offset = button.dataset.slideknapp === "next" ? 1 : -1;
-        
         nextSlide(offset);
     })
-});
+})
 
 const nextSlide = ((offset)=>{
     let newIndex = [...slides.children].indexOf(activeSlide) + offset;
@@ -20,7 +19,7 @@ const nextSlide = ((offset)=>{
         newIndex=0;
     } else if (newIndex < 0) {
         newIndex = arrayLength - 1;
-    };
+    }
 
     slides.children[newIndex].dataset.active = true;
     delete activeSlide.dataset.active;
@@ -28,6 +27,6 @@ const nextSlide = ((offset)=>{
 
     clearTimeout(slideTimer);
     slideTimer = setTimeout(()=>{nextSlide(1)}, slideIntervalMillis);
-});
+})
 
 slideTimer = setTimeout(()=>{nextSlide(1)}, slideIntervalMillis);
