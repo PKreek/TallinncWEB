@@ -84,18 +84,17 @@
                     <p>Ny kund? Klicka här</p>
                 </div>
                 <div v-else>
-                    <form>
-                        <label>Namn:</label><br>
-                        <input v-model="kundLista[inloggadId].name"><br>
-                        <label>Gata:</label><br>
-                        <input v-model="kundLista[inloggadId].address.street"><br>
-                        <label>Postnummer:</label><br>
-                        <input v-model="kundLista[inloggadId].address.zipcode"><br>
-                        <label>Ort:</label><br>
-                        <input v-model="kundLista[inloggadId].address.city"><br>
-                        <label>E-post:</label><br>
-                        <input v-model="kundLista[inloggadId].email"><br>
-                    </form>
+                    <label>Namn:</label><br>
+                    <input v-model="kundLista[inloggadId].name"><br>
+                    <label>Gata:</label><br>
+                    <input v-model="kundLista[inloggadId].address.street"><br>
+                    <label>Postnummer:</label><br>
+                    <input v-model="kundLista[inloggadId].address.zipcode"><br>
+                    <label>Ort:</label><br>
+                    <input v-model="kundLista[inloggadId].address.city"><br>
+                    <label>E-post:</label><br>
+                    <input v-model="kundLista[inloggadId].email"><br>
+                    <button>Vidare till betalning</button>
                 </div>
             </div>    
         </div>
