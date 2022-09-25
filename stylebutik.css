@@ -1,11 +1,17 @@
 #butikssida {
-	
+	margin: auto;
+	max-width: 1440px;
 }
 
 .skor {
+	margin-top: 8vw;
 	border: 2px black;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.butik-bild {
+	width: 15vw;
 }
 
 .betalning-sida {

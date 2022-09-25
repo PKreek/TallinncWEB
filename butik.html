@@ -53,7 +53,7 @@
             <div v-if="checkaUt === false">
                 <div  class="skor">
                     <div v-for="sko in skor">
-                        <img :src="sko.bild">
+                        <img :src="sko.bild"  class="butik-bild">
                         <p>{{sko.namn}}</p>
                         <p>{{sko.pris}}</p>
                         <button @click="kopSko(sko)">KÖP</button>
