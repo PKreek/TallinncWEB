@@ -52,7 +52,7 @@
         <div id="butikssida">
             <div v-if="checkaUt === false">
                 <div  class="skor">
-                    <div v-for="sko in skor">
+                    <div v-for="sko in skor" class="sko-produkter">
                         <img :src="sko.bild"  class="butik-bild">
                         <p>{{sko.namn}}</p>
                         <p>{{sko.pris}}</p>

@@ -10,6 +10,10 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
+.sko-produkter {
+	margin: auto;
+}
+
 .butik-bild {
 	width: 15vw;
 }
