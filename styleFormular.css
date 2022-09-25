@@ -2,7 +2,7 @@
 #form
 {
     background-color:grey;
-    display:flex;
+    /* display:flex;  */
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -13,10 +13,12 @@
 {
     background-color: white;
     border-radius:0.5em;
-    
     width: 35em;
     height: 50em;
     overflow:hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10rem;
 }
 .rubrik
 {
@@ -36,6 +38,7 @@
     padding-bottom:1em;
     position:relative;
 }
+
 .form-control label
 {
     display:inline-block;
@@ -77,6 +80,7 @@
     bottom:0;
     left:0;
 }
+
 .form-control.error small
 {
     color:#e74c3c;
