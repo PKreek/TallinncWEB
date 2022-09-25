@@ -55,7 +55,7 @@
                     <div v-for="sko in skor" class="sko-produkter">
                         <img :src="sko.bild"  class="butik-bild">
                         <p>{{sko.namn}}</p>
-                        <p>{{sko.pris}}</p>
+                        <p>{{sko.pris}} kr</p>
                         <button @click="kopSko(sko)">KÖP</button>
                     </div>
                 </div> 

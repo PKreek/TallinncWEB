@@ -12,10 +12,11 @@
 
 .sko-produkter {
 	margin: auto;
+	padding: 5%
 }
 
 .butik-bild {
-	width: 15vw;
+	width: 100%;
 }
 
 .betalning-sida {
