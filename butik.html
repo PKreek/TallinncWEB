@@ -60,45 +60,45 @@
                     </div>
                 </div> 
             </div>
-            <div v-if="checkaUt === true" class="betalning">
-                <div class="betalning-sida">
-                    <div>
-                        <div v-for="sko in kundvagn"  class="checka-ut-lista">
-                            <img :src="sko.bild" class="betalning-bild">
-                            <div>
-                                <p>{{sko.namn}}</p>
-                                <p>{{sko.pris}}</p>
-                                <button @click="taBortSko">Ta bort</button>
-                            </div>  
-                        </div>
+            <div v-if="checkaUt === true" class="betalning-sida">
+                <div>
+                    <button @click="checkaUt = false">Gå tillbaka</button>
+                    <div v-for="sko in kundvagn"  class="checka-ut-lista">
+                        <img :src="sko.bild" class="betalning-bild">
                         <div>
-                            <p>Totalsumma: {{totalSumma}}</p>
-                            <button @click="checkaUt = false">Gå tillbaka</button>
-                        </div>
+                            <p>{{sko.namn}}</p>
+                            <p>{{sko.pris}}</p>
+                            <button @click="taBortSko">Ta bort</button>
+                        </div>  
                     </div>
-                    <div v-if="inloggad===false">
-                        <label>Användarnamn:</label><br>
-                        <input v-model="inloggNamn">
-                        <p>{{inloggMeddelande}}</p>
-                        <label>Lösenord:</label><br>
-                        <input type="text">
-                        <button @click="loggaIn(inloggNamn)">Logga in</button>
-                        <p>Ny kund? Klicka här</p>
+                    <div class="betalning-summa">
+                        <p>Totalsumma: {{totalSumma}}</p>
+                        
                     </div>
-                    <div v-else>
-                        <label>Namn:</label><br>
-                        <input v-model="kundLista[inloggadId].name"><br>
-                        <label>Gata:</label><br>
-                        <input v-model="kundLista[inloggadId].address.street"><br>
-                        <label>Postnummer:</label><br>
-                        <input v-model="kundLista[inloggadId].address.zipcode"><br>
-                        <label>Ort:</label><br>
-                        <input v-model="kundLista[inloggadId].address.city"><br>
-                        <label>E-post:</label><br>
-                        <input v-model="kundLista[inloggadId].email"><br>
-                        <button>Vidare till betalning</button>
-                    </div>
-                </div>    
+                </div>
+                <div v-if="inloggad===false">
+                    <label>Användarnamn:</label><br>
+                    <input v-model="inloggNamn">
+                    <p>{{inloggMeddelande}}</p>
+                    <label>Lösenord:</label><br>
+                    <input type="text"><br>
+                    <br>
+                    <button @click="loggaIn(inloggNamn)">Logga in</button>
+                    <p>Ny kund? Klicka här</p>
+                </div>
+                <div v-else>
+                    <label>Namn:</label><br>
+                    <input v-model="kundLista[inloggadId].name"><br>
+                    <label>Gata:</label><br>
+                    <input v-model="kundLista[inloggadId].address.street"><br>
+                    <label>Postnummer:</label><br>
+                    <input v-model="kundLista[inloggadId].address.zipcode"><br>
+                    <label>Ort:</label><br>
+                    <input v-model="kundLista[inloggadId].address.city"><br>
+                    <label>E-post:</label><br>
+                    <input v-model="kundLista[inloggadId].email"><br>
+                    <button>Vidare till betalning</button>
+                </div>
             </div>
         </div>
     </div>

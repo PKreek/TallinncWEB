@@ -43,7 +43,7 @@
 }
 
 .betalning-sida {
-	margin: 10vw;
+	margin-top: 8vw;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 }
@@ -51,10 +51,16 @@
 .checka-ut-lista {
     display: grid;
 	grid-template-columns: repeat(2, 1fr);
+
 }
 
 .betalning-bild {
 	width: 10vw;
+	margin: auto;
+}
+
+.betalning-summa > p {
+	text-align: center;
 }
 
 /*Kundvagnen*/
