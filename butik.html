@@ -30,11 +30,12 @@
                             <p class="kundvagn-knapp" onclick="togglaKundvagn()">shopping_cart {{iKundvagn}}</p>
                             <div id ="kundvagn-meny">
                                 <div v-if="iKundvagn > 0">
-                                    <div v-for="sko in kundvagn">
+                                    <div v-for="sko in kundvagn" class="kundvagn-objekt">
                                         <p>{{sko.namn}}</p>
                                         <p>{{sko.pris}}</p>
                                         <button @click="taBortSko">Ta bort</button>
                                     </div>
+                                    <br>
                                     <button @click="checkaUt = true" onclick="togglaKundvagn()">Till kassan</button>
                                 </div>
                                 <div v-else>
@@ -48,55 +49,57 @@
             </div>
         </header>
         <!-- Webshop!!!!! -->
-        <div v-if="checkaUt === false">
-            <div  class="skor">
-                <div v-for="sko in skor">
-                    <img :src="sko.bild">
-                    <p>{{sko.namn}}</p>
-                    <p>{{sko.pris}}</p>
-                    <button @click="kopSko(sko)">KÖP</button>
-                </div>
-            </div> 
-        </div>
-        <div v-if="checkaUt === true" class="betalning">
-            <div class="betalning-sida">
-                <div>
-                    <div v-for="sko in kundvagn"  class="checka-ut-lista">
-                        <img :src="sko.bild" class="betalning-bild">
-                        <div>
-                            <p>{{sko.namn}}</p>
-                            <p>{{sko.pris}}</p>
-                            <button @click="taBortSko">Ta bort</button>
-                        </div>  
+        <div id="butikssida">
+            <div v-if="checkaUt === false">
+                <div  class="skor">
+                    <div v-for="sko in skor">
+                        <img :src="sko.bild">
+                        <p>{{sko.namn}}</p>
+                        <p>{{sko.pris}}</p>
+                        <button @click="kopSko(sko)">KÖP</button>
                     </div>
+                </div> 
+            </div>
+            <div v-if="checkaUt === true" class="betalning">
+                <div class="betalning-sida">
                     <div>
-                        <p>Totalsumma: {{totalSumma}}</p>
-                        <button @click="checkaUt = false">Gå tillbaka</button>
+                        <div v-for="sko in kundvagn"  class="checka-ut-lista">
+                            <img :src="sko.bild" class="betalning-bild">
+                            <div>
+                                <p>{{sko.namn}}</p>
+                                <p>{{sko.pris}}</p>
+                                <button @click="taBortSko">Ta bort</button>
+                            </div>  
+                        </div>
+                        <div>
+                            <p>Totalsumma: {{totalSumma}}</p>
+                            <button @click="checkaUt = false">Gå tillbaka</button>
+                        </div>
                     </div>
-                </div>
-                <div v-if="inloggad===false">
-                    <label>Användarnamn:</label><br>
-                    <input v-model="inloggNamn">
-                    <p>{{inloggMeddelande}}</p>
-                    <label>Lösenord:</label><br>
-                    <input type="text">
-                    <button @click="loggaIn(inloggNamn)">Logga in</button>
-                    <p>Ny kund? Klicka här</p>
-                </div>
-                <div v-else>
-                    <label>Namn:</label><br>
-                    <input v-model="kundLista[inloggadId].name"><br>
-                    <label>Gata:</label><br>
-                    <input v-model="kundLista[inloggadId].address.street"><br>
-                    <label>Postnummer:</label><br>
-                    <input v-model="kundLista[inloggadId].address.zipcode"><br>
-                    <label>Ort:</label><br>
-                    <input v-model="kundLista[inloggadId].address.city"><br>
-                    <label>E-post:</label><br>
-                    <input v-model="kundLista[inloggadId].email"><br>
-                    <button>Vidare till betalning</button>
-                </div>
-            </div>    
+                    <div v-if="inloggad===false">
+                        <label>Användarnamn:</label><br>
+                        <input v-model="inloggNamn">
+                        <p>{{inloggMeddelande}}</p>
+                        <label>Lösenord:</label><br>
+                        <input type="text">
+                        <button @click="loggaIn(inloggNamn)">Logga in</button>
+                        <p>Ny kund? Klicka här</p>
+                    </div>
+                    <div v-else>
+                        <label>Namn:</label><br>
+                        <input v-model="kundLista[inloggadId].name"><br>
+                        <label>Gata:</label><br>
+                        <input v-model="kundLista[inloggadId].address.street"><br>
+                        <label>Postnummer:</label><br>
+                        <input v-model="kundLista[inloggadId].address.zipcode"><br>
+                        <label>Ort:</label><br>
+                        <input v-model="kundLista[inloggadId].address.city"><br>
+                        <label>E-post:</label><br>
+                        <input v-model="kundLista[inloggadId].email"><br>
+                        <button>Vidare till betalning</button>
+                    </div>
+                </div>    
+            </div>
         </div>
     </div>
 </body>

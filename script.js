@@ -49,6 +49,26 @@ const app = createApp ({
                     namn: "Ännu en sko",
                     pris: 2399,
                     bild: "bilder/sko3.jpg"
+                },
+                {
+                    namn: "En liknande sko",
+                    pris: 1199,
+                    bild: "bilder/sko1.jpg"
+                },
+                {
+                    namn: "En ko",
+                    pris: 1199,
+                    bild: "bilder/sko2.jpg"
+                },
+                {
+                    namn: "En annan ko",
+                    pris: 2199,
+                    bild: "bilder/sko3.jpg"
+                },
+                {
+                    namn: "Ingen ko",
+                    pris: 2399,
+                    bild: "bilder/sko3.jpg"
                 }
             ]
         }
