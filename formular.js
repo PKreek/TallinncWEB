@@ -18,6 +18,9 @@ btnReset.addEventListener('click', (e) => {
 
     const formControlEmail = email.parentElement;
     formControlEmail.className="form-control"; 
+
+    const formControlText = text.parentElement;
+    formControlText.className="form-control"; 
 })
 
 let validNamn=false;
