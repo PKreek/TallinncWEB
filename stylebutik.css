@@ -1,6 +1,11 @@
+#butikssida {
+	
+}
+
 .skor {
+	border: 2px black;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .betalning-sida {
@@ -28,6 +33,8 @@
 	display: none;
 	z-index: 5;
 	position: absolute;
-	background-color: aliceblue;
+	background-color: rgb(204, 207, 209);
+	font-size: 0.5em;
+	min-width: 15rem;
 	right: 0;
 }
