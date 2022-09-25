@@ -7,7 +7,6 @@
 	margin-top: 8vw;
 	border: 2px black;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
 }
 
 .sko-produkter {
@@ -17,6 +16,30 @@
 
 .butik-bild {
 	width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+	.skor {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.skor {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.skor {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.skor {
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
 
 .betalning-sida {
