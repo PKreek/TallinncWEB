@@ -36,7 +36,7 @@
     
     <div class ="container">
         
-        <div class="rubrik"> 
+        <div class="rubrik" id="rubrik"> 
             <h1>Kul att du vill kontakta oss!</h1>
             <p1>Fyll i formuläret så återkommer vi så snart som möjligt! </p1>
         </div>
@@ -46,7 +46,7 @@
                 <div class="form-control">
             
                     <label for="namn">Namn:</label>
-                    <input type ="text" name="namn" id="namn"onkeydown="valideringNamn()"/>
+                    <input type ="text" name="namn" id="namn"oninput="valideringNamn()"/>
                     <img src="bilder/valid.png" class ="valid"/>
                     <img src="bilder/invalid.png" class="invalid"/>
                     <small></small>
@@ -56,7 +56,7 @@
                 <div class="form-control">
                     
                     <label for="number">Nummer:</label>
-                    <input type ="tel" name="number" id="number" value="" onkeydown="valideringNumber()"/>
+                    <input type ="tel" name="number" id="number" value="" oninput="valideringNumber()"/>
                     <img src="bilder/valid.png" class ="valid"/>
                     <img src="bilder/invalid.png" class="invalid"/>
                     <small></small>
@@ -68,7 +68,7 @@
                 <div class="form-control">
                 
                     <label for ="email">Email:</label>
-                    <input type ="email" name="email" id="email" onkeydown="valideringEmail()"/>
+                    <input type ="email" name="email" id="email" oninput="valideringEmail()"/>
                     <img src="bilder/invalid.png" class="invalid"/>
                     <img src="bilder/valid.png" class ="valid"/>
                     <small></small>
@@ -76,17 +76,17 @@
                 </div>
 
                 <div class="form-control">
-                    <div id="textCheck">
+                  
                         <label for ="text" >Text:</label>
-                        <textarea name="text" id="text" onkeydown="valideringText()"></textarea>
+                        <textarea name="text" id="text" oninput="valideringText()"></textarea>
                         <img src="bilder/invalid.png" class="invalid"/>
                         <small></small>
-                    </div>
+                  
                 </div>
 
                     <hr />
-                    <button type="Reset" class="reset">Reset</button>
-                    <button type="submit"id="submit">Submit</button>
+                    <button type="Reset" class="reset" id="reset">Reset</button>
+                    <button type="button" id="submit">Submit</button>
     
             </form>
     </div>
