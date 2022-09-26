@@ -289,6 +289,12 @@ li img{
 	
 }
 
+.container{
+	margin-left: 10rem;
+	margin-right: 10rem;
+	margin-top: 5rem;
+}
+
 /*Bildspel*/
 #bildspel {
     width: 70vw;
