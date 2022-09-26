@@ -352,13 +352,24 @@ ul li p {
 		font-size: x-large;
 	}
 
-
 	.material-symbols-outlined{
 		margin: 0.4rem;
 		color: white;
 	}
 	.material-symbols-outlined:hover{
 		transform:scale(1);
+	}
+	.slide > img {
+		width: 80%;
+		height: 40%;
+	}
+	#bildspel {
+		width: 100vw;
+		height: 100vh;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		
 	}
 }
 
