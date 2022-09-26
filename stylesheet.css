@@ -163,6 +163,7 @@ body {
 	text-align: center;
 	font-weight:500;
 	padding: 0.5%;
+	cursor: pointer;
 	
 }
 
@@ -170,6 +171,8 @@ body {
 	color: white;
 	background-color: black;
 	border-color: black;
+	transform:scale(1.1);
+
 }
 
 .footer-nav{
@@ -315,10 +318,12 @@ li img{
 
 .bildspel-knapp.next {
     right: 1rem;
+	cursor: pointer;
 }
 
 .bildspel-knapp.prev {
     left: 1rem;
+	cursor: pointer;
 }
 
 #bildspel-lista{
