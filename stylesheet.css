@@ -178,6 +178,7 @@ body {
 .footer-nav{
 	background-color: black;
 	height: 18rem;
+	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap: 0;
