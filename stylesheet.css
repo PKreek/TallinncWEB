@@ -116,18 +116,22 @@ body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-weight: 500;
 }
-
+.contentbilder{
+	display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr 1fr 1fr;
+}
 .columns{
     display: grid;
     gap: 1rem;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+    grid-auto-columns: 1fr 1fr 1fr;
     padding: 1rem;
     text-align: center;	
 }
 .contentbilder img {
 	cursor: pointer;
-	width: 70%;
+	width: 80%;
 	height: 100%;
 	border-radius: 0.5rem;   
 	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -351,11 +355,23 @@ ul li p {
 	#rubrikcontentbilder{
 		font-size: x-large;
 	}
-	.contentbilder img{
-		width: 100%;
-		height: 100%;
+
+	.contentbilder{
+		display: inline-block;
+		margin: 1rem;
+	}
+	.columns{
+		margin-top: 10%;
+		font-size: large;
 	}
 
+	.columns img{
+		width: 80%
+	}
+	
+    #news{
+		margin-top: 20%;
+	}
 	.material-symbols-outlined{
 		margin: 0.4rem;
 		color: white;
