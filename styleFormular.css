@@ -1,7 +1,7 @@
 
 #form
 {
-    background-color:grey;
+    background-color:white;
     /* display:flex;  */
     align-items: center;
     justify-content: center;
@@ -11,21 +11,22 @@
 
 .container
 {
-    background-color: white;
+    background-color: gray;
     border-radius:0.5em;
     width: 35em;
     height: 50em;
     overflow:hidden;
     margin-left: auto;
     margin-right: auto;
-    margin-top:10rem;
+    margin-top:7rem;
     margin-bottom: 10rem;
 }
 .rubrik
 {
-    background-color: #f7f7f7;
-    border-bottom:0.25em solid #f0f0f0d5;
+    background-color: rgb(196, 196, 196);
+    /* border-bottom:0.25em solid #f0f0f0d5; */
     padding: 1em 3em;
+
 }
 
 .form
@@ -46,7 +47,7 @@
     margin-bottom:0.5em;
 }
 
-.form-control input 
+/* .form-control input 
 {
     border:2px solid #f0f0f0;
     border-radius:4px;
@@ -54,7 +55,18 @@
     padding: 10px;
     width:100%;
     font-size: 20px;
+} */
+
+.form-control input 
+{
+    border:2px solid black;
+    border-radius:4px;
+    display:block;
+    padding: 10px;
+    width:100%;
+    font-size: 20px;
 }
+
 .form-control.success input 
 {
    border-color:#2ecc71;
@@ -64,7 +76,14 @@
   border-color:#e74c3c;
 }
 
-
+#okBild{
+    width:1.5em;
+   left:10em;
+    position:relative;
+    display:block;
+    visibility: hidden;
+  
+}
 
 .form-control.success .valid
 {

@@ -37,23 +37,24 @@
     
     <div class ="container">
         
-        <div class="rubrik" id="rubrik"> 
-            <h1>Kul att du vill kontakta oss!</h1>
-            <p1>Fyll i formuläret så återkommer vi så snart som möjligt! </p1>
+        <div class="rubrik" > 
+            <h1 id="rubriken">Kul att du vill kontakta oss!</h1>
+            <p1 id="paragraf">Fyll i formuläret så återkommer vi så snart som möjligt! </p1>
         </div>
 
             <form class="form"> 
                 
+        
+
                 <div class="form-control">
-            
+                    
                     <label for="namn">Namn:</label>
                     <input type ="text" name="namn" id="namn"oninput="valideringNamn()"/>
                     <img src="bilder/valid.png" class ="valid"/>
                     <img src="bilder/invalid.png" class="invalid"/>
                     <small></small>
                 </div>
-
-             
+               
                 <div class="form-control">
                     
                     <label for="number">Nummer:</label>
@@ -84,11 +85,14 @@
                         <small></small>
                   
                 </div>
-
+                <div class="knappar">
                     <hr />
                     <button type="Reset" class="reset" id="reset">Reset</button>
                     <button type="button" id="submit">Submit</button>
-    
+                </div>
+                <div id="okBild"><img src="bilder/valid.png"/>
+                </div>
+             
             </form>
     </div>
 
