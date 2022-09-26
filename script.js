@@ -1,12 +1,6 @@
 
 //WEBSHOP
 
-//const kundLista = []
-
-    
-
-    
-
 const togglaKundvagn = (()=>{
     const kundvagnen = document.getElementById("kundvagn-meny");
     if(kundvagnen.style.display === "block"){
