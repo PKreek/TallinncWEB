@@ -381,12 +381,18 @@ ul li p {
 	}
 	.slide > img {
 		height: 10rem;
-		width: 10rem;
+		width: 15rem;
 	}
 	#bildspel{
 		height: 8rem;
-		
 	}
+	.bildspel-knapp.next {
+		right: 0;
+	}
+	.bildspel-knapp.prev{
+		left: 0;
+	}
+
 	.footer-medlem{
 		height: 8rem;
 	}
