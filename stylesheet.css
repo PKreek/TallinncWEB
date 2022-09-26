@@ -336,7 +336,11 @@ ul li p {
 }
 /*SlutBildspel*/
 
-
+@media only screen and (max-width: 768px){
+	.menylinks{
+		display: none;
+	}
+}
 
 
 	
