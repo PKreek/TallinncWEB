@@ -18,7 +18,9 @@
 .container {
     display:flex;
     align-items: right;
-    justify-content: left
+    justify-content: left;
+    margin-left: 2rem;
+    margin-top: 2rem;
   }
   
   .image {
@@ -28,4 +30,10 @@
   .text {
     font-size: 20px;
     padding-left: 20px;
+  }
+
+  #personligParagraf{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 5rem;
   }
