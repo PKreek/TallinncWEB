@@ -364,15 +364,12 @@ ul li p {
 		transform:scale(1);
 	}
 	.slide > img {
-		width: 80%;
-		height: 40%;
+		height: 10rem;
+		width: 10rem;
 	}
-	#bildspel {
-		width: 100vw;
-		height: 100vh;
-		position: relative;
-		margin-left: auto;
-		margin-right: auto;	
+	#bildspel{
+		height: 8rem;
+		
 	}
 	.footer-medlem{
 		height: 8rem;
