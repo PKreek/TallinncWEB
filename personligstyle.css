@@ -16,13 +16,13 @@
 }
 
 .container {
-    display:flex;
-    align-items: right;
-    justify-content: left;
-    margin-left: 2rem;
-    margin-top: 2rem;
-  }
-  
+  display:flex;
+  align-items: right;
+  justify-content: left;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
   .image {
     flex-basis: 40%
   }
