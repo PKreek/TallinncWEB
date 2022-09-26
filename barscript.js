@@ -33,11 +33,6 @@ const animateSkills = (bar, skill, counter) => {
     if(counter<skill){
         setTimeout(()=>{animateSkills(bar, skill, counter)}, 15);
     }
-
 }
 
 
-addSkill ("Javascript", 78);
-addSkill ("HTML", 53);
-addSkill ("CSS", 18);
-displaySkills();
