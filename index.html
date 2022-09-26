@@ -8,53 +8,92 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 		<title>SkoXperterna</title>
 	</head>
 	<body>
-		<nav>
+		<header>
 			<div class="navbar">
-				<p id="logo"><a href="index.html">Sko<em>Xperterna</em></a></p>
-				<ul class="menylinks">
-					<li><a href="omOss2.html">om oss</a></li>
-					<li><a href="form.html">kontakta oss</a></li>	
-					<li><a href="butik.html">butik</a></li>
-				</ul>
+				<p id="logo">
+					<a href="index.html">Sko<em>Xperterna</em></a>
+				</p>
+				<nav>
+					<ul class="menylinks">
+						<li><a href="omOss2.html">om oss</a></li>
+						<li><a href="form.html">kontakta oss</a></li>
+						<li><a href="butik.html">butik</a></li>
+					</ul>
+				</nav>
 				<div class="navicons">
-					<span class="material-symbols-outlined">
-						search 
-					</span>
-					<span class="material-symbols-outlined" id="hameny">
-						menu
-					</span>
+					<span class="material-symbols-outlined"> search </span>
+					<span class="material-symbols-outlined" id="hameny"> menu </span>
 				</div>
 			</div>
-		</nav>
+		</header>
 
 		<h2 id="rubrikcontentbilder">Vilka skor ska man använda?</h2>
-		<p id="paragrafcontentbilder">Lär dig mer om vilka skor <em>du</em> ska använda
-			vid olika tillfällen av löpning och idrottande</p>
+		<p id="paragrafcontentbilder">
+			Lär dig mer om vilka skor <em>du</em> ska använda vid olika tillfällen av
+			löpning och idrottande
+		</p>
 		<div class="contentbilder">
 			<div class="columns">
-			<div><img src="bilder/stadslopning.jpg" alt="något" /><p>Stadslöpning</p></div>
-		</div>
-		<div class="columns">
-			<div><img src="bilder/terrang.jpg" alt="något" /><p>Terränglöpning</p></div>
-		</div>
-		<div class="columns">
-			<div><img src="bilder/fridrott.jpg" alt="något" /><p>Fridrott</p></div>
+				<div>
+					<img src="bilder/stadslopning.jpg" alt="något" />
+					<p>Stadslöpning</p>
+				</div>
+			</div>
+			<div class="columns">
+				<div>
+					<img src="bilder/terrang.jpg" alt="något" />
+					<p>Terränglöpning</p>
+				</div>
+			</div>
+			<div class="columns">
+				<div>
+					<img src="bilder/fridrott.jpg" alt="något" />
+					<p>Fridrott</p>
+				</div>
 			</div>
 		</div>
 		<h2 id="news">Nyheter</h2>
-		<!-- Slideshow!!!!! --> 
+		<!-- Slideshow!!!!! -->
 		<div id="bildspel">
-			<button class="bildspel-knapp prev" data-slideknapp="prev">&#8592;</button>
-			<button class="bildspel-knapp next" data-slideknapp="next">&#8594;</button>
+			<button class="bildspel-knapp prev" data-slideknapp="prev">
+				&#8592;
+			</button>
+			<button class="bildspel-knapp next" data-slideknapp="next">
+				&#8594;
+			</button>
 			<ul id="bildspel-lista">
-				<li class="slide" data-active="true"><img src="bilder/sko1.jpg" alt="något"><p class="bildcaption">Nike Air Zoom Alphafly <br> 3 339 kr</p></li>
-				<li class="slide"><img src="bilder/sko2.jpg" alt="något"><p class="bildcaption">Nike SuperRep Cycle 2 <br> 1 349 kr</p></li>
-				<li class="slide"><img src="bilder/sko3.jpg"alt="något"><p class="bildcaption">Nike ZoomX Vaporfly <br> 2 799 kr</p></li>
+				<li class="slide" data-active="true">
+					<img src="bilder/sko1.jpg" alt="något" />
+					<p class="bildcaption">
+						Nike Air Zoom Alphafly <br />
+						3 339 kr
+					</p>
+				</li>
+				<li class="slide">
+					<img src="bilder/sko2.jpg" alt="något" />
+					<p class="bildcaption">
+						Nike SuperRep Cycle 2 <br />
+						1 349 kr
+					</p>
+				</li>
+				<li class="slide">
+					<img src="bilder/sko3.jpg" alt="något" />
+					<p class="bildcaption">
+						Nike ZoomX Vaporfly <br />
+						2 799 kr
+					</p>
+				</li>
 			</ul>
 		</div>
 		<!-- Slut på Slideshow!!!!! -->
@@ -82,16 +121,14 @@
 				<ul>
 					<h3>Butik</h3>
 					<li><a href="butik.html">Hitta senaste nyheterna</a></li>
-					<li><a href="butik.html">Hitta skor som passar dig</a></li>		
+					<li><a href="butik.html">Hitta skor som passar dig</a></li>
 				</ul>
 			</div>
 			<div class="kolumner-logos">
-				<i class="fa fa-instagram"></i><i class="fa fa-twitter"></i><i class="fa fa-facebook-f"></i>
+				<i class="fa fa-instagram"></i><i class="fa fa-twitter"></i
+				><i class="fa fa-facebook-f"></i>
 			</div>
 			<!--Slut på footer-->
-
-
-
 		</div>
 	</body>
 </html>
