@@ -381,6 +381,21 @@ ul li p {
 		font-size: large;
 		text-align: center;
 	}
+	.footer-nav{
+		display:inline-block;
+		height:auto
+	}
+	.kolumner-items{
+		font-size: small;
+	}
+	.kolumner-items h3{
+		font-size: medium;
+	}
+	.kolumner-logos{
+		text-align: center;
+	}
+
+	
 }
 
 
