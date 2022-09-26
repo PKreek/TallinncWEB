@@ -1,8 +1,8 @@
 const form =document.getElementById("form");
-const  email =document.getElementById("email")
-const namn = document.getElementById("namn")
-const tele = document.getElementById("number")
-const text = document.getElementById("text")
+const  email =document.getElementById("email");
+const namn = document.getElementById("namn");
+const tele = document.getElementById("number");
+const text = document.getElementById("text");
 
 
 const btnReset = document.getElementById("reset");
@@ -31,84 +31,83 @@ let validText=false;
 function valideringNamn()
 {
     
-    const nameValue =namn.value
+    const nameValue =namn.value;
 
     if(nameValue==='')
     {
         validNamn=false;
-        test()
-        setErrorFor(namn,'Namn kan inte vara blank')
+        test();
+        setErrorFor(namn,'Namn kan inte vara blank');
     }
     else if(nameValue.length >=40)
     {   
         validNamn=false;
-        setErrorFor(namn,'För långt namn')
+        setErrorFor(namn,'För långt namn');
     }
     else{
         validNamn=true;
-        setSuccessFor(namn)
+        setSuccessFor(namn);
     }
 }
 
 function valideringEmail()
 {
-    const emailValue = email.value  
+    const emailValue = email.value;  
 
     var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
     if(emailValue==='')
     {
         let validEmail=false;
-        setErrorFor(email,'Email kan inte vara blank')
+        setErrorFor(email,'Email kan inte vara blank');
     }
     else if (emailValue.match(pattern))
     {
         let validEmail=true;
-        setSuccessFor(email)
+        setSuccessFor(email);
     }
     else{
         let validEmail=false;
-        setErrorFor(email,'Inte tillåten email')
+        setErrorFor(email,'Inte tillåten email');
     }
 }
 
 function valideringNumber()
 {
-    const teleValue = tele.value
+    const teleValue = tele.value;
     const phone = /^[\d,\s,\+,\-]{5,15}/;
     if(teleValue.length>=16)
     {
         validTele=false;
-        setErrorFor(number,'För långt nummer')
-        
+        setErrorFor(number,'För långt nummer');
     }
    else if(teleValue.match(phone))
     {
         validTele=true;
-        setSuccessFor(number)
+        setSuccessFor(number);
     }
     else if(teleValue==='')
     {
         validTele=false;
-        setErrorFor(number,'Nummer kan inte vara blank')
+        setErrorFor(number,'Nummer kan inte vara blank');
     }
     else{
         validTele=false;
-        setErrorFor(number, "ogiltligt nummer")
+        setErrorFor(number, "ogiltligt nummer");
     }
 }
 function valideringText()
 {
-    const textValue = text.value
+    const textValue = text.value;
     if (textValue==='')
     {
         validText=false;
-        setErrorFor(text,'Textruta kan inte vara blank')
+        setErrorFor(text,'Textruta kan inte vara blank');
     }
     else
     {
         validText=true;
-        setSuccessFor(text)
+        setSuccessFor(text);
     }
 }
 
@@ -119,15 +118,15 @@ console.log(validTele)
 console.log(validText)
 }
 
-const submitBtn=document.getElementById('submit')
+const submitBtn=document.getElementById('submit');
 submitBtn.addEventListener ('click', (e) =>{
     if(validNamn===true)
     {
-        console.log(submitBtn)
-        let meddelande=document.getElementById("rubrik")
-        meddelande.replaceChild=("jdajsdjasj")
-        let container=document.getElementsByClassName("container")
-        alert("De gick!!!")
+        console.log(submitBtn);
+        let meddelande=document.getElementById("rubrik");
+        meddelande.replaceChild=("jdajsdjasj");
+        let container=document.getElementsByClassName("container");
+        alert("De gick!!!");
     }
 })
 
@@ -136,8 +135,6 @@ function setErrorFor(input, message){
     const small = formControl.querySelector('small');
     small.innerText = message;
     formControl.className="form-control error";  
-    
-
 }
 function setSuccessFor(input){
     const formControl = input.parentElement;
