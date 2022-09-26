@@ -71,9 +71,6 @@
                             <button @click="taBortSko">Ta bort</button>
                         </div>  
                     </div>
-                    <div class="betalning-summa">
-                        <p>Totalsumma: {{totalSumma}}</p>
-                    </div>
                 </div>
                 <div v-if="inloggad===false">
                     <label>Användarnamn:</label><br>
@@ -96,6 +93,8 @@
                     <input v-model="kundLista[inloggadId].address.city"><br>
                     <label>E-post:</label><br>
                     <input v-model="kundLista[inloggadId].email"><br>
+                    <p class="betalning-summa-text">Totalsumma</p>
+                    <p class="betalning-summa"> {{totalSumma}} kr</p>
                     <button>Vidare till betalning</button>
                 </div>
             </div>

@@ -37,7 +37,7 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 	.betalning-sida {
-	margin-top: 8vw;
+	margin-top: 24vw;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	}
@@ -47,11 +47,32 @@
 	.skor {
 		grid-template-columns: repeat(3, 1fr);
 	}
+	.betalning-sida {
+		margin-top: 14vw;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 @media only screen and (min-width: 992px) {
 	.skor {
 		grid-template-columns: repeat(4, 1fr);
+	}
+	.betalning-sida {
+		margin-top: 12vw;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.skor {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.betalning-sida {
+		margin-top: 8vw;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
@@ -65,8 +86,12 @@
 	margin: auto;
 }
 
-.betalning-summa > p {
-	text-align: center;
+.betalning-summa {
+	font-size: larger;
+}
+
+.betalning-summa-text {
+	margin-top: 4vw;
 }
 
 /*Kundvagnen*/
