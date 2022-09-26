@@ -62,6 +62,9 @@ body {
 .material-symbols-outlined:hover{
 	transform:scale(1.2);
 }
+#hameny{
+	display: none;
+}
 .navicons-items{
 	text-align: right;
 }
@@ -340,6 +343,22 @@ ul li p {
 @media only screen and (max-width: 768px){
 	.menylinks{
 		display: none;
+	}
+	#hameny{
+		display: inline;
+	}
+
+	#rubrikcontentbilder{
+		font-size: x-large;
+	}
+
+
+	.material-symbols-outlined{
+		margin: 0.4rem;
+		color: white;
+	}
+	.material-symbols-outlined:hover{
+		transform:scale(1);
 	}
 }
 
