@@ -58,17 +58,19 @@ function valideringEmail()
 
     if(emailValue==='')
     {
-        let validEmail=false;
+        validEmail = false;
         setErrorFor(email,'Email kan inte vara blank');
     }
     else if (emailValue.match(pattern))
     {
-        let validEmail=true;
+        validEmail = true;
         setSuccessFor(email);
+        console.log(validEmail)
     }
     else{
-        let validEmail=false;
+        validEmail = false;
         setErrorFor(email,'Inte tillåten email');
+        console.log(validEmail)
     }
 }
 
@@ -111,22 +113,36 @@ function valideringText()
     }
 }
 
-function test(){
-console.log(validNamn)
-console.log(validEmail)
-console.log(validTele)
-console.log(validText)
-}
+
 
 const submitBtn=document.getElementById('submit');
 submitBtn.addEventListener ('click', (e) =>{
-    if(validNamn===true)
+    if(validNamn===true && validTele === true && validEmail===true && validText=== true)
     {
-        console.log(submitBtn);
-        let meddelande=document.getElementById("rubrik");
-        meddelande.replaceChild=("jdajsdjasj");
-        let container=document.getElementsByClassName("container");
-        alert("De gick!!!");
+        document.getElementById("okBild").style.visibility="visible";
+
+        const form = document.querySelectorAll(".form-control");
+        form.forEach(element => element.remove());
+        const btns= document.querySelectorAll(".knappar");
+        btns.forEach(element => element.remove());
+
+        const rubrik = document.querySelector("#rubriken");
+        rubrik.innerText=("Tack!");
+
+        const paragraf = document.querySelector("#paragraf");
+        paragraf.innerHTML=("Vi har mottagit ditt formlär och kommer att återkomma så snart som möjligt!");
+    }
+    if (validNamn===false){
+        setErrorFor(namn,"Ruta kan inte vara tom");
+    }
+    if (validTele===false){
+        setErrorFor(number,"Ange ett korrekt värde");
+    }
+    if (validEmail===false){
+        setErrorFor(email,"Ange ett korrekt värde");
+    }
+    if ( validText===false){
+        setErrorFor(text,'Textruta kan inte vara blank');
     }
 })
 
@@ -141,60 +157,3 @@ function setSuccessFor(input){
     formControl.className="form-control success"; 
     const small = formControl.querySelector('small');
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*const namnInput =document.querySelector('input[name="name"]')
-
-
-const form = document.querySelector("form")
-const nummer = document.getElementById("form")
-const email = document.querySelector("name")
-const text = document.querySelector("name")
-
-
-console.log(namnInput);
-console.log(form);form
-
-
-
-
-form.addEventListener('submit',(e)=>{
-    e.preventDefault();
-    console.log("here");
-
-});
-
-
-
-
-namnInput.addEventListener('submit', (e) =>
-{
-    e.preventDefault();
-    checkInputs();
-});
-
-
-function validation()
-{
-    const namnValue = namn.value
-    const nummerValue = nummer.value
-    const emailValue = email.value
-    const textValue = text.value
-
-}*/
