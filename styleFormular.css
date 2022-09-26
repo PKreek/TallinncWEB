@@ -26,6 +26,7 @@
     background-color: rgb(196, 196, 196);
     /* border-bottom:0.25em solid #f0f0f0d5; */
     padding: 1em 3em;
+
 }
 
 .form
@@ -75,7 +76,14 @@
   border-color:#e74c3c;
 }
 
-
+#okBild{
+    width:1.5em;
+   left:10em;
+    position:relative;
+    display:block;
+    visibility: hidden;
+  
+}
 
 .form-control.success .valid
 {
