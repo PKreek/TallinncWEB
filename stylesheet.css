@@ -368,8 +368,18 @@ ul li p {
 		height: 100vh;
 		position: relative;
 		margin-left: auto;
-		margin-right: auto;
-		
+		margin-right: auto;	
+	}
+	.footer-medlem{
+		height: 8rem;
+	}
+	.footer-medlem p{
+		font-size: large;
+		text-align: center;
+	}
+	.medlemsknapp{
+		font-size: large;
+		text-align: center;
 	}
 }
 
