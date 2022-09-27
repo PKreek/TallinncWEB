@@ -362,8 +362,9 @@ ul li p {
 	.menylinks{
 		display: grid;
 		gap: 2rem;
-		align-items: center;
+		padding: 0;
 	}	
+
 	.navbar ul li:hover::after {
 		width: 0;
 	}
@@ -400,7 +401,7 @@ ul li p {
 	}
 	.slide > img {
 		height: 15rem;
-		width: 100%
+		width: 100%;
 	}
 	#bildspel{
 		height: 8rem;
