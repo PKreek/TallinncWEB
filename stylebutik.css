@@ -23,6 +23,10 @@
 	cursor: pointer;
 }
 
+.menylinks{
+	margin-left: 5rem;
+}
+
 @media only screen and (max-width: 600px) {
 	.skor {
 		grid-template-columns: repeat(1, 1fr);
