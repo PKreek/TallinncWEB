@@ -204,6 +204,7 @@ body {
 .kolumner-items h3{
 	font-size: x-large;
 }
+
 .kolumner-items ul li{
 	list-style: none;
 	margin-top: 1rem;
@@ -214,7 +215,7 @@ body {
 	color: white;
 }
 
-.kolumner-items ul li:hover{
+.hovertext:hover{
 	transform:scale(1.03);
 }
 .kolumner-logos{
@@ -222,7 +223,6 @@ body {
 	margin: 1rem;
 	font-size:xx-large	
 }
-
 
 /* STARTSIDA SLUT*/
 
