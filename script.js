@@ -17,6 +17,7 @@ const app = createApp ({
         return {
             checkaUt: false,
             inloggad: false,
+            visaKundlista: false,
             inloggNamn: "",
             inloggadId: "",
             inloggMeddelande: "",
