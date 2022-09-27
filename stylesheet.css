@@ -13,10 +13,13 @@ body {
 	align-items: center;
 	background: black;
     border-bottom: solid white;
-	justify-content: center;
+	justify-content: space-between;
 	z-index: 3;
 	position: fixed;
 	top: 0;
+}
+.navlista{
+	margin-left:-11rem;
 }
 .navbar ul li {
 	list-style: none;
@@ -65,7 +68,6 @@ body {
 #hameny{
 	display: none;
 }
-
 
 #logo {
 	color: white;
@@ -341,6 +343,7 @@ ul li p {
 		display: none;
 		background-color: black;
 		inset: 4.7rem 0rem auto;
+		margin-left: 0;
 		
 	}
 	.menylinks{
@@ -349,10 +352,6 @@ ul li p {
 		padding: 0;
 	}	
 
-	.navbar{
-		display: grid;
-		grid-template-columns: 6fr 1fr;
-	}
 	.navbar ul li:hover::after {
 		width: 0;
 	}
