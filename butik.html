@@ -1,138 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylebutik.css">
-    <link rel="stylesheet" href="stylesheet.css">
-	<script src="script.js" defer></script>
-	<script src="https://unpkg.com/vue@3"></script>
-    <script src="startsida.js" defer></script>
-    <title>Butik</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <div id="app">
-        <header>
-            <div class="navbar">
-				<p id="logo">
-					<a href="index.html">Sko<em>Xperterna</em></a>
-				</p>
-				<nav class="navlista">
-					<ul class="menylinks">
-						<li><a href="omOss2.html">om oss</a></li>
-						<li><a href="form.html">kontakta oss</a></li>
-						<li><a href="butik.html">butik</a></li>
-					</ul>
-				</nav>
-				<div class="navicons">
-					<button class="mobil-toggle"><span class="material-symbols-outlined" id="hameny"> menu </span></button>
-				</div>    
-                    <div class="material-symbols-outlined">
-                        <div class="kundvagn-container">	
-                            <p class="kundvagn-knapp" onclick="togglaKundvagn()">shopping_cart {{iKundvagn}}</p>
-                            <div id ="kundvagn-meny">
-                                <div v-if="iKundvagn > 0">
-                                    <div v-for="sko in kundvagn" class="kundvagn-objekt">
-                                        <p>{{sko.namn}}</p>
-                                        <p>{{sko.pris}}</p>
-                                        <button @click="taBortSko">Ta bort</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylebutik.css">
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="script.js" defer></script>
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="startsida.js" defer></script>
+        <title>Butik</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="app">
+            <header>
+                <div class="navbar">
+                    <p id="logo">
+                        <a href="index.html">Sko<em>Xperterna</em></a>
+                    </p>
+                    <nav class="navlista">
+                        <ul class="menylinks">
+                            <li><a href="omOss2.html">om oss</a></li>
+                            <li><a href="form.html">kontakta oss</a></li>
+                            <li><a href="butik.html">butik</a></li>
+                        </ul>
+                    </nav>
+                    <div class="navicons">
+                        <button class="mobil-toggle"><span class="material-symbols-outlined" id="hameny"> menu </span></button>
+                    </div>    
+                        <div class="material-symbols-outlined">
+                            <div class="kundvagn-container">	
+                                <p class="kundvagn-knapp" onclick="togglaKundvagn()">shopping_cart {{iKundvagn}}</p>
+                                <div id ="kundvagn-meny">
+                                    <div v-if="iKundvagn > 0">
+                                        <div v-for="sko in kundvagn" class="kundvagn-objekt">
+                                            <p>{{sko.namn}}</p>
+                                            <p>{{sko.pris}}</p>
+                                            <button @click="taBortSko">Ta bort</button>
+                                        </div>
+                                        <br>
+                                        <button @click="checkaUt = true" onclick="togglaKundvagn()">Till kassan</button>
                                     </div>
-                                    <br>
-                                    <button @click="checkaUt = true" onclick="togglaKundvagn()">Till kassan</button>
-                                </div>
-                                <div v-else>
-                                    <p>Kundvagnen är tom</p>
-                                </div>
-                            </div>					
+                                    <div v-else>
+                                        <p>Kundvagnen är tom</p>
+                                    </div>
+                                </div>					
+                            </div>
+                        </div>
+                    </div>    
+            </header>
+            <!-- Webshop!!!!! -->
+            <div id="butikssida">
+                <div v-if="checkaUt === false">
+                    <div  class="skor">
+                        <div v-for="sko in skor" class="sko-produkter">
+                            <img :src="sko.bild"  class="butik-bild" alt="Skobild">
+                            <p>{{sko.namn}}</p>
+                            <p>{{sko.pris}} kr</p>
+                            <button @click="kopSko(sko)">KÖP</button>
+                        </div>
+                    </div> 
+                </div>
+                <div v-if="checkaUt === true" class="betalning-sida">
+                    <div>
+                        <button @click="checkaUt = false">Gå tillbaka</button>
+                        <div v-for="sko in kundvagn"  class="checka-ut-lista">
+                            <img :src="sko.bild" class="betalning-bild" alt="Skobild">
+                            <div>
+                                <p>{{sko.namn}}</p>
+                                <p>{{sko.pris}}</p>
+                                <button @click="taBortSko">Ta bort</button>
+                            </div>  
                         </div>
                     </div>
-                </div>    
-        </header>
-        <!-- Webshop!!!!! -->
-        <div id="butikssida">
-            <div v-if="checkaUt === false">
-                <div  class="skor">
-                    <div v-for="sko in skor" class="sko-produkter">
-                        <img :src="sko.bild"  class="butik-bild" alt="Skobild">
-                        <p>{{sko.namn}}</p>
-                        <p>{{sko.pris}} kr</p>
-                        <button @click="kopSko(sko)">KÖP</button>
+                    <div v-if="inloggad===false">
+                        <label>Användarnamn:</label><br>
+                        <input v-model="inloggNamn">
+                        <p>{{inloggMeddelande}}</p>
+                        <label>Lösenord:</label><br>
+                        <input type="text"><br>
+                        <br>
+                        <button @click="loggaIn(inloggNamn)">Logga in</button>
+                        <p>Ny kund? Klicka här</p>
                     </div>
-                </div> 
-            </div>
-            <div v-if="checkaUt === true" class="betalning-sida">
-                <div>
-                    <button @click="checkaUt = false">Gå tillbaka</button>
-                    <div v-for="sko in kundvagn"  class="checka-ut-lista">
-                        <img :src="sko.bild" class="betalning-bild" alt="Skobild">
-                        <div>
-                            <p>{{sko.namn}}</p>
-                            <p>{{sko.pris}}</p>
-                            <button @click="taBortSko">Ta bort</button>
-                        </div>  
+                    <div v-else>
+                        <label>Namn:</label><br>
+                        <input v-model="kundLista[inloggadId].name"><br>
+                        <label>Gata:</label><br>
+                        <input v-model="kundLista[inloggadId].address.street"><br>
+                        <label>Postnummer:</label><br>
+                        <input v-model="kundLista[inloggadId].address.zipcode"><br>
+                        <label>Ort:</label><br>
+                        <input v-model="kundLista[inloggadId].address.city"><br>
+                        <label>E-post:</label><br>
+                        <input v-model="kundLista[inloggadId].email"><br>
+                        <p class="betalning-summa-text">Totalsumma</p>
+                        <p class="betalning-summa"> {{totalSumma}} kr</p>
+                        <button>Vidare till betalning</button>
                     </div>
-                </div>
-                <div v-if="inloggad===false">
-                    <label>Användarnamn:</label><br>
-                    <input v-model="inloggNamn">
-                    <p>{{inloggMeddelande}}</p>
-                    <label>Lösenord:</label><br>
-                    <input type="text"><br>
-                    <br>
-                    <button @click="loggaIn(inloggNamn)">Logga in</button>
-                    <p>Ny kund? Klicka här</p>
-                </div>
-                <div v-else>
-                    <label>Namn:</label><br>
-                    <input v-model="kundLista[inloggadId].name"><br>
-                    <label>Gata:</label><br>
-                    <input v-model="kundLista[inloggadId].address.street"><br>
-                    <label>Postnummer:</label><br>
-                    <input v-model="kundLista[inloggadId].address.zipcode"><br>
-                    <label>Ort:</label><br>
-                    <input v-model="kundLista[inloggadId].address.city"><br>
-                    <label>E-post:</label><br>
-                    <input v-model="kundLista[inloggadId].email"><br>
-                    <p class="betalning-summa-text">Totalsumma</p>
-                    <p class="betalning-summa"> {{totalSumma}} kr</p>
-                    <button>Vidare till betalning</button>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="footer-medlem">
-        <p>Bli medlem nu</p>
-        <button class="medlemsknapp">Läs mer</button>
-    </div>
-    <div class="footer-nav">
-        <div class="kolumner-items">
-            <ul>
-                <li><h3>SkoXperterna</h3></li>
-                <li><a href="omOss2.html">Om oss</a></li>
-            </ul>
+        <div class="footer-medlem">
+            <p>Bli medlem nu</p>
+            <button class="medlemsknapp">Läs mer</button>
         </div>
-        <div class="kolumner-items">
-            <ul>
-                <li><h3>Få hjälp</h3></li>
-                <li>Beställningsstatus</li>
-                <li>Returer</li>
-                <li><a href="form.html">Kontakta oss</a></li>
-            </ul>
+        <div class="footer-nav">
+            <div class="kolumner-items">
+                <ul>
+                    <li><h3>SkoXperterna</h3></li>
+                    <li><a href="omOss2.html">Om oss</a></li>
+                </ul>
+            </div>
+            <div class="kolumner-items">
+                <ul>
+                    <li><h3>Få hjälp</h3></li>
+                    <li>Beställningsstatus</li>
+                    <li>Returer</li>
+                    <li><a href="form.html">Kontakta oss</a></li>
+                </ul>
+            </div>
+            <div class="kolumner-items">
+                <ul>
+                    <li><h3>Butik</h3></li>
+                    <li><a href="butik.html">Hitta senaste nyheterna</a></li>
+                    <li><a href="butik.html">Hitta skor som passar dig</a></li>		
+                </ul>
+            </div>
+            <div class="kolumner-logos">
+                <i class="fa fa-instagram"></i><i class="fa fa-twitter"></i><i class="fa fa-facebook-f"></i>
+            </div>
         </div>
-        <div class="kolumner-items">
-            <ul>
-                <li><h3>Butik</h3></li>
-                <li><a href="butik.html">Hitta senaste nyheterna</a></li>
-                <li><a href="butik.html">Hitta skor som passar dig</a></li>		
-            </ul>
-        </div>
-        <div class="kolumner-logos">
-            <i class="fa fa-instagram"></i><i class="fa fa-twitter"></i><i class="fa fa-facebook-f"></i>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
