@@ -2,7 +2,7 @@ const slideButtons = document.querySelectorAll("[data-slideknapp]");
 const slides = document.querySelector("#bildspel-lista");
 let activeSlide = document.querySelector("[data-active]");
 let slideTimer;
-const slideIntervalMillis = 5000; //hur lång tid mellan varje slide i milliesekunder 
+const slideIntervalMillis = 3000; //hur lång tid mellan varje slide i milliesekunder 
 
 slideButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -31,12 +31,3 @@ const nextSlide = ((offset)=>{
 
 slideTimer = setTimeout(()=>{nextSlide(1)}, slideIntervalMillis);
 
-//Hamburgarmeny
-
-const mobilToggle = document.querySelector("#hameny");
-const navLinks = document.querySelector(".navlista");
-
-mobilToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("opened");
-
-})
