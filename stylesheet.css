@@ -356,7 +356,7 @@ ul li p {
 	.navlista{
 		display: none;
 		background-color: black;
-		inset: 5rem 1rem auto;
+		inset: 4.7rem 1rem auto;
 		border-radius: 0.4rem;
 	}
 	.menylinks{
