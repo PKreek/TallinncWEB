@@ -353,8 +353,19 @@ ul li p {
 	
 }
 @media only screen and (max-width: 768px){
-	.menylinks{
+	.navlista{
 		display: none;
+		background-color: black;
+		inset: 5rem 1rem auto;
+		border-radius: 0.4rem;
+	}
+	.menylinks{
+		display: grid;
+		gap: 2rem;
+		
+	}	
+	.navbar ul li:hover::after {
+		width: 0;
 	}
 	#hameny{
 		display: inline;
@@ -429,6 +440,13 @@ ul li p {
 	.kolumner-logos{
 		text-align: center;
 	}
+
+	.opened{
+		display: block;
+		position: fixed;
+	
+	}
+	
 
 	
 }
