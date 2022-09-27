@@ -1,14 +1,13 @@
 .skillBar {
     height: 100%;
-    background-color: blue;
+    background-color: rgb(155, 102, 78);
+    border-radius: 1rem;
     
 }
 
 .skillBarContainer {
     width: 200px;
-    height: 20px;
-    background-color: black;
-    
+    height: 25px;
+    background-color: rgb(192, 190, 190);
+    border-radius: 1rem;
 }
-
-
