@@ -17,6 +17,11 @@
 .butik-bild {
 	width: 100%;
 }
+.material-symbols-outlined span{
+	font-size: 28px;
+    font-weight: 600;
+	cursor: pointer;
+}
 
 @media only screen and (max-width: 600px) {
 	.skor {
