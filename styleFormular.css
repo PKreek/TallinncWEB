@@ -21,6 +21,7 @@
     margin-top:7rem;
     margin-bottom: 10rem;
 }
+
 .rubrik
 {
     background-color: rgb(145, 143, 143);
@@ -158,4 +159,10 @@ button:hover
     #form button{
         background: transparent;
     }
+
+    .container
+{
+    width: auto;
+    height: auto;
+}
 }
