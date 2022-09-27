@@ -30,8 +30,7 @@
 				<div class="navicons">
 					<button class="mobil-toggle"><span class="material-symbols-outlined" id="hameny"> menu </span></button>
 				</div>    
-			
-                    <span class="material-symbols-outlined">
+                    <div class="material-symbols-outlined">
                         <div class="kundvagn-container">	
                             <p class="kundvagn-knapp" onclick="togglaKundvagn()">shopping_cart {{iKundvagn}}</p>
                             <div id ="kundvagn-meny">
@@ -49,8 +48,7 @@
                                 </div>
                             </div>					
                         </div>
-                        
-                    </span>
+                    </div>
                 </div>    
             
             
@@ -71,7 +69,7 @@
                 <div>
                     <button @click="checkaUt = false">Gå tillbaka</button>
                     <div v-for="sko in kundvagn"  class="checka-ut-lista">
-                        <img :src="sko.bild" class="betalning-bild">
+                        <img :src="sko.bild" class="betalning-bild" alt="Skobild">
                         <div>
                             <p>{{sko.namn}}</p>
                             <p>{{sko.pris}}</p>
