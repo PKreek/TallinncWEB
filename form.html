@@ -3,8 +3,8 @@
 
 
     <head>
-        <link rel="stylesheet" href="styleFormular.css">
         <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="styleFormular.css">
         <script  defer src="formular.js" ></script>
         <script src="startsida.js" defer></script>
         <meta charset="UTF-8">
@@ -15,10 +15,7 @@
         <title>Formulär</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
     </head>  
-
-        
     <body id="form">
-
         <header>
 			<div class="navbar">
 				<p id="logo">
@@ -38,26 +35,20 @@
 		</header>
 
     
-    <div class ="container">
         
+    <div class ="container">
         <div class="rubrik" > 
             <h1 id="rubriken">Kul att du vill kontakta oss!</h1>
             <p id="paragraf">Fyll i formuläret så återkommer vi så snart som möjligt! </p>
         </div>
-
             <form class="form"> 
-                
-        
-
                 <div class="form-control">
-                    
                     <label for="namn">Namn:</label>
                     <input type ="text" name="namn" id="namn" oninput="valideringNamn()">
                     <img src="bilder/valid.png"  alt=" " class ="valid">
                     <img src="bilder/invalid.png" alt=" " class="invalid">
                     <small></small>
                 </div>
-               
                 <div class="form-control">
                     
                     <label for="number">Nummer:</label>
@@ -65,11 +56,7 @@
                     <img src="bilder/valid.png" alt=" " class ="valid">
                     <img src="bilder/invalid.png" alt=" " class="invalid">
                     <small></small>
-                
                 </div>
-
-
-
                 <div class="form-control">
                 
                     <label for ="email">Email:</label>
@@ -79,14 +66,12 @@
                     <small></small>
                 
                 </div>
-
                 <div class="form-control">
                   
                         <label for ="text" >Text:</label>
                         <textarea name="text" id="text" oninput="valideringText()"></textarea>
                         <img src="bilder/invalid.png" alt=" " class="invalid">
                         <small></small>
-                  
                 </div>
                 <div class="knappar">
                     <hr >
@@ -95,9 +80,12 @@
                 </div>
                 <div id="okBild"><img src="bilder/valid.png" alt=" ">
                 </div>
-             
             </form>
     </div>
+
+
+
+
 
 
     <div class="footer-nav">

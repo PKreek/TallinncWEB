@@ -46,6 +46,10 @@
     margin-bottom:0.5em;
 }
 
+.mobil-toggle{
+    display: none;
+}
+
 /* .form-control input 
 {
     border:2px solid #f0f0f0;
@@ -142,4 +146,16 @@ button:hover
 	background-color:rgba(0, 128, 0, 0.308);
 	border:red;
 	color:white;
+}
+
+@media only screen and (max-width: 768px){
+    .mobil-toggle{
+        display: inline;
+        background: black;
+        border: 0;
+    }
+
+    #form button{
+        background: transparent;
+    }
 }
