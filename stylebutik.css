@@ -110,6 +110,8 @@
 	background-color: rgb(204, 207, 209);
 	font-size: 0.5em;
 	min-width: 15rem;
+	max-height: 20rem;
 	right: 0;
 	cursor: default;
+	overflow: auto;
 }
