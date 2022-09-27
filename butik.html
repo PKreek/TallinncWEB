@@ -64,7 +64,12 @@
                 </div> 
             </div>
             <div v-if="checkaUt === true" class="betalning-sida">
-                <div>
+                <div v-if="visaKundlista === true">
+                    <div v-for="kund in kundLista">
+                        <div><p>{{kund.username}} / {{kund.name}}</p></div>
+                    </div>
+                </div>
+                <div v-else>
                     <button @click="checkaUt = false">Gå tillbaka</button>
                     <div v-for="sko in kundvagn"  class="checka-ut-lista">
                         <img :src="sko.bild" class="betalning-bild" alt="Skobild">
@@ -100,7 +105,7 @@
                     <input v-model="kundLista[inloggadId].email"><br>
                     <p class="betalning-summa-text">Totalsumma</p>
                     <p class="betalning-summa"> {{totalSumma}} kr</p>
-                    <button>Vidare till betalning</button>
+                    <button @click="visaKundlista = true">Vidare till betalning</button>
                 </div>
             </div>
         </div>
