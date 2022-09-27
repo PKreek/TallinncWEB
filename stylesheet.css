@@ -281,7 +281,7 @@ body {
 li img{
 	list-style:none;
 	line-height: 3.75em;
-	padding: 3.125em;;
+	padding: left 3.125em;;
     display:flex;
 	height: 12.5em;
     color: #111;
@@ -356,8 +356,8 @@ ul li p {
 	.navlista{
 		display: none;
 		background-color: black;
-		inset: 4.7rem 0rem auto;
-		border-radius: 0.2rem;
+		inset: 5rem 1rem auto;
+		border-radius: 0.4rem;
 	}
 	.menylinks{
 		display: grid;
