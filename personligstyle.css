@@ -1,6 +1,6 @@
 .bild img{
-	width: 70%;
-	height: 80%;
+	width: 80%;
+	height: auto;
     flex-basis: 40%;
     margin-top: 5rem;
 }
