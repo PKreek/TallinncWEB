@@ -1,8 +1,8 @@
 
-addSkill ("Javascript", 58);
-addSkill ("HTML", 53);
-addSkill ("CSS", 48);
-addSkill ("Street",25) 
+addSkill ("Street", 58);
+addSkill ("Innebandy", 53);
+addSkill ("Fotboll", 48);
+addSkill ("Vandring",25) 
 
 displaySkills();
 

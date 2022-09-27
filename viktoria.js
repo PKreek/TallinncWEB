@@ -1,7 +1,7 @@
 
-addSkill ("Javascript", 72);
-addSkill ("HTML", 90);
-addSkill ("CSS", 70); 
+addSkill ("Löpning", 72);
+addSkill ("Vandring", 90);
+addSkill ("Fotboll", 70); 
 
 displaySkills();
 
