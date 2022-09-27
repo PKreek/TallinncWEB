@@ -1,4 +1,19 @@
 # TallinncWEB
+
+
+
+Fixa validering
+Fixa så att den är responsiv överallt
+Fixa hamburgermeny
+
+
+
+
+
+
+
+
+
 Hemsida för Tallinnc
 
 

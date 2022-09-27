@@ -10,10 +10,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Formulär</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
     </head>  
 
         
@@ -42,7 +42,7 @@
         
         <div class="rubrik" > 
             <h1 id="rubriken">Kul att du vill kontakta oss!</h1>
-            <p1 id="paragraf">Fyll i formuläret så återkommer vi så snart som möjligt! </p1>
+            <p id="paragraf">Fyll i formuläret så återkommer vi så snart som möjligt! </p>
         </div>
 
             <form class="form"> 
@@ -52,18 +52,18 @@
                 <div class="form-control">
                     
                     <label for="namn">Namn:</label>
-                    <input type ="text" name="namn" id="namn"oninput="valideringNamn()"/>
-                    <img src="bilder/valid.png" class ="valid"/>
-                    <img src="bilder/invalid.png" class="invalid"/>
+                    <input type ="text" name="namn" id="namn" oninput="valideringNamn()">
+                    <img src="bilder/valid.png"  alt=" " class ="valid">
+                    <img src="bilder/invalid.png" alt=" " class="invalid">
                     <small></small>
                 </div>
                
                 <div class="form-control">
                     
                     <label for="number">Nummer:</label>
-                    <input type ="tel" name="number" id="number" value="" oninput="valideringNumber()"/>
-                    <img src="bilder/valid.png" class ="valid"/>
-                    <img src="bilder/invalid.png" class="invalid"/>
+                    <input type ="tel" name="number" id="number" value="" oninput="valideringNumber()">
+                    <img src="bilder/valid.png" alt=" " class ="valid">
+                    <img src="bilder/invalid.png" alt=" " class="invalid">
                     <small></small>
                 
                 </div>
@@ -73,9 +73,9 @@
                 <div class="form-control">
                 
                     <label for ="email">Email:</label>
-                    <input type ="email" name="email" id="email" oninput="valideringEmail()"/>
-                    <img src="bilder/invalid.png" class="invalid"/>
-                    <img src="bilder/valid.png" class ="valid"/>
+                    <input type ="email" name="email" id="email" oninput="valideringEmail()">
+                    <img src="bilder/invalid.png" alt=" " class="invalid">
+                    <img src="bilder/valid.png" alt=" " class ="valid">
                     <small></small>
                 
                 </div>
@@ -84,16 +84,16 @@
                   
                         <label for ="text" >Text:</label>
                         <textarea name="text" id="text" oninput="valideringText()"></textarea>
-                        <img src="bilder/invalid.png" class="invalid"/>
+                        <img src="bilder/invalid.png" alt=" " class="invalid">
                         <small></small>
                   
                 </div>
                 <div class="knappar">
-                    <hr />
+                    <hr >
                     <button type="Reset" class="reset" id="reset">Reset</button>
                     <button type="button" id="submit">Submit</button>
                 </div>
-                <div id="okBild"><img src="bilder/valid.png"/>
+                <div id="okBild"><img src="bilder/valid.png" alt=" ">
                 </div>
              
             </form>
