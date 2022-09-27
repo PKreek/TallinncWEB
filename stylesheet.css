@@ -347,6 +347,11 @@ ul li p {
 }
 /*SlutBildspel*/
 
+.mobil-toggle{
+	background: transparent;
+	border: 0;
+	
+}
 @media only screen and (max-width: 768px){
 	.menylinks{
 		display: none;
@@ -383,11 +388,14 @@ ul li p {
 		transform:scale(1);
 	}
 	.slide > img {
-		height: 10rem;
-		width: 15rem;
+		height: 15rem;
+		width: 100%
 	}
 	#bildspel{
 		height: 8rem;
+	}
+	.bildspel-knapp{
+		margin-top: 18%;
 	}
 	.bildspel-knapp.next {
 		right: 0;
@@ -398,6 +406,7 @@ ul li p {
 
 	.footer-medlem{
 		height: 8rem;
+		margin-top: 50%;
 	}
 	.footer-medlem p{
 		font-size: large;
