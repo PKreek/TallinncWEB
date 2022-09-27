@@ -58,7 +58,7 @@
             <div v-if="checkaUt === false">
                 <div  class="skor">
                     <div v-for="sko in skor" class="sko-produkter">
-                        <img :src="sko.bild"  class="butik-bild">
+                        <img :src="sko.bild"  class="butik-bild" alt="Skobild">
                         <p>{{sko.namn}}</p>
                         <p>{{sko.pris}} kr</p>
                         <button @click="kopSko(sko)">KÖP</button>
@@ -113,13 +113,13 @@
     <div class="footer-nav">
         <div class="kolumner-items">
             <ul>
-                <h3>SkoXperterna</h3>
+                <li><h3>SkoXperterna</h3></li>
                 <li><a href="omOss2.html">Om oss</a></li>
             </ul>
         </div>
         <div class="kolumner-items">
             <ul>
-                <h3>Få hjälp</h3>
+                <li><h3>Få hjälp</h3></li>
                 <li>Beställningsstatus</li>
                 <li>Returer</li>
                 <li><a href="form.html">Kontakta oss</a></li>
@@ -127,7 +127,7 @@
         </div>
         <div class="kolumner-items">
             <ul>
-                <h3>Butik</h3>
+                <li><h3>Butik</h3></li>
                 <li><a href="butik.html">Hitta senaste nyheterna</a></li>
                 <li><a href="butik.html">Hitta skor som passar dig</a></li>		
             </ul>
