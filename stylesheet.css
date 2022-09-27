@@ -362,7 +362,7 @@ ul li p {
 	.menylinks{
 		display: grid;
 		gap: 2rem;
-		
+		align-items: center;
 	}	
 	.navbar ul li:hover::after {
 		width: 0;
