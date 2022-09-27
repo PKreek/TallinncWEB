@@ -11,7 +11,7 @@
 
 .container
 {
-    background-color: gray;
+    background-color: rgb(206, 201, 201);
     border-radius:0.5em;
     width: 35em;
     height: 50em;
@@ -23,10 +23,9 @@
 }
 .rubrik
 {
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(145, 143, 143);
     /* border-bottom:0.25em solid #f0f0f0d5; */
     padding: 1em 3em;
-
 }
 
 .form
