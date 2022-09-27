@@ -13,7 +13,7 @@ body {
 	align-items: center;
 	background: black;
     border-bottom: solid white;
-	justify-content: space-between;
+	justify-content: center;
 	z-index: 3;
 	position: fixed;
 	top: 0;
@@ -65,9 +65,7 @@ body {
 #hameny{
 	display: none;
 }
-.navicons-items{
-	text-align: right;
-}
+
 
 #logo {
 	color: white;
@@ -351,6 +349,10 @@ ul li p {
 		padding: 0;
 	}	
 
+	.navbar{
+		display: grid;
+		grid-template-columns: 6fr 1fr;
+	}
 	.navbar ul li:hover::after {
 		width: 0;
 	}
