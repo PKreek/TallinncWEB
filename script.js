@@ -61,7 +61,7 @@ const app = createApp ({
                     bild: "bilder/sko7.jpg"
                 },
                 {
-                    namn: "Nike Zoom Fly 5 A.I.R. Hola Lou",
+                    namn: "Nike Zoom Fly",
                     pris: 2399,
                     bild: "bilder/sko8.jpg"
                 }
