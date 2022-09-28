@@ -41,29 +41,29 @@ const app = createApp ({
                     bild: "bilder/sko3.jpg"
                 },
                 {
-                    namn: "Ännu en sko",
+                    namn: "Nike Zoom Structure 24",
                     pris: 2399,
-                    bild: "bilder/sko3.jpg"
+                    bild: "bilder/sko4.jpg"
                 },
                 {
-                    namn: "En liknande sko",
+                    namn: "Nike Zoom Rival",
                     pris: 1199,
-                    bild: "bilder/sko1.jpg"
+                    bild: "bilder/sko5.jpg"
                 },
                 {
                     namn: "Nike SuperRep 2 Next",
                     pris: 1199,
-                    bild: "bilder/sko2.jpg"
+                    bild: "bilder/sko6.jpg"
                 },
                 {
-                    namn: "En annan ko",
+                    namn: "Nike Run Swift 2",
                     pris: 2199,
-                    bild: "bilder/sko3.jpg"
+                    bild: "bilder/sko7.jpg"
                 },
                 {
-                    namn: "Ingen ko",
+                    namn: "Nike Zoom Fly 5 A.I.R. Hola Lou",
                     pris: 2399,
-                    bild: "bilder/sko3.jpg"
+                    bild: "bilder/sko8.jpg"
                 }
             ]
         }
