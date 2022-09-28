@@ -35,7 +35,7 @@
                                 <div v-for="sko in kundvagn" class="kundvagn-objekt">
                                     <p>{{sko.namn}}</p>
                                     <p>{{sko.pris}}</p>
-                                    <button @click="taBortSko">Ta bort</button>
+                                    <button @click="taBortSko(sko)">Ta bort</button>
                                 </div>
                                 <br>
                                 <button @click="checkaUt = true" onclick="togglaKundvagn()">Till kassan</button>
@@ -72,7 +72,7 @@
                         <div>
                             <p>{{sko.namn}}</p>
                             <p>{{sko.pris}}</p>
-                            <button @click="taBortSko">Ta bort</button>
+                            <button @click="taBortSko(sko)">Ta bort</button>
                         </div>  
                     </div>
                 </div>
