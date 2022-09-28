@@ -26,12 +26,12 @@ const app = createApp ({
             kundvagn: [],
             skor: [
                 {
-                    namn: "Air Zoom Alphafly",
+                    namn: "Zoom Alphafly",
                     pris: 1199,
                     bild: "bilder/sko1.jpg"
                 },
                 {
-                    namn: "Nike SuperRep Cycle 2 Next Nature",
+                    namn: "Nike SuperRep 2 Next",
                     pris: 1199,
                     bild: "bilder/sko2.jpg"
                 },
@@ -51,7 +51,7 @@ const app = createApp ({
                     bild: "bilder/sko1.jpg"
                 },
                 {
-                    namn: "Nike SuperRep Cycle 2 Next Nature",
+                    namn: "Nike SuperRep 2 Next",
                     pris: 1199,
                     bild: "bilder/sko2.jpg"
                 },
