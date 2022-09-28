@@ -145,7 +145,6 @@
 button:hover
 {
 	background-color:rgba(0, 128, 0, 0.308);
-	border:red;
 	color:white;
 }
 
