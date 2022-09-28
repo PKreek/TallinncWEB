@@ -38,8 +38,8 @@
     .bild img{
       width: 80%;
       height: auto;
-        flex-basis: 40%;
-        margin-top: 5rem;
+      flex-basis: 40%;
+      margin-top: 5rem;
     }
     
     .namnrubrik{
@@ -54,8 +54,9 @@
     
     .container {
       justify-content: center;
-      margin-left: 2rem;
       margin-top: 2rem;
+      display: block;
+      margin-left: 0;
     }
     
       
