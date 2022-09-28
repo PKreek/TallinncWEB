@@ -165,7 +165,6 @@ body {
 	border-radius: 1em;
 	background-color: black;
 	color: white;
-	border-color: black;
 	font-size: x-large;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	text-align: center;
@@ -177,10 +176,7 @@ body {
 
 .medlemsknapp:hover{
 	color: white;
-	background-color: black;
-	border-color: black;
 	transform:scale(1.1);
-
 }
 
 .footer-nav{
