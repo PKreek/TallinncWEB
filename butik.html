@@ -15,40 +15,38 @@
 </head>
 <body>
     <div id="app">
-        <header>
-            <div class="navbar">
-				<p id="logo">
-					<a href="index.html">Sko<em>Xperterna</em></a>
-				</p>
-				<nav class="navlista">
-					<ul class="menylinks">
-						<li><a href="omOss2.html">om oss</a></li>
-						<li><a href="form.html">kontakta oss</a></li>
-						<li><a href="butik.html">butik</a></li>
-					</ul>
-				</nav>  
-                    <div class="material-symbols-outlined">
-                        <button class="mobil-toggle"><span class="material-symbols-outlined" id="hameny"> menu </span></button>
-                        <div class="kundvagn-container">	
-                            <p class="kundvagn-knapp" onclick="togglaKundvagn()">shopping_cart {{iKundvagn}}</p>
-                            <div id ="kundvagn-meny">
-                                <div v-if="iKundvagn > 0">
-                                    <div v-for="sko in kundvagn" class="kundvagn-objekt">
-                                        <p>{{sko.namn}}</p>
-                                        <p>{{sko.pris}}</p>
-                                        <button @click="taBortSko">Ta bort</button>
-                                    </div>
-                                    <br>
-                                    <button @click="checkaUt = true" onclick="togglaKundvagn()">Till kassan</button>
+        <div class="navbar">
+            <p id="logo">
+                <a href="index.html">Sko<em>Xperterna</em></a>
+            </p>
+            <nav class="navlista">
+                <ul class="menylinks">
+                    <li><a href="omOss2.html">om oss</a></li>
+                    <li><a href="form.html">kontakta oss</a></li>
+                    <li><a href="butik.html">butik</a></li>
+                </ul>
+            </nav>  
+                <div class="material-symbols-outlined">
+                    <button class="mobil-toggle"><span class="material-symbols-outlined" id="hameny"> menu </span></button>
+                    <div class="kundvagn-container">	
+                        <p class="kundvagn-knapp" onclick="togglaKundvagn()">shopping_cart {{iKundvagn}}</p>
+                        <div id ="kundvagn-meny">
+                            <div v-if="iKundvagn > 0">
+                                <div v-for="sko in kundvagn" class="kundvagn-objekt">
+                                    <p>{{sko.namn}}</p>
+                                    <p>{{sko.pris}}</p>
+                                    <button @click="taBortSko">Ta bort</button>
                                 </div>
-                                <div v-else>
-                                    <p>Kundvagnen är tom</p>
-                                </div>
-                            </div>					
-                        </div>
+                                <br>
+                                <button @click="checkaUt = true" onclick="togglaKundvagn()">Till kassan</button>
+                            </div>
+                            <div v-else>
+                                <p>Kundvagnen är tom</p>
+                            </div>
+                        </div>					
                     </div>
-                </div>    
-        </header>
+                </div>
+            </div>    
         <!-- Webshop!!!!! -->
         <div id="butikssida">
             <div v-if="checkaUt === false">
