@@ -83,7 +83,8 @@ const app = createApp ({
             this.iKundvagn++;
         },
         taBortSko(sko) {
-            this.kundvagn.splice(sko.indexOf,1);
+            console.log(this.kundvagn.indexOf(sko))
+            this.kundvagn.splice(this.kundvagn.indexOf(sko),1);
             this.iKundvagn--;
         },
         loggaIn(user) {
