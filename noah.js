@@ -1,7 +1,7 @@
 
-addSkill ("Street", 68);
-addSkill ("Löpning", 73);
-addSkill ("Basket", 98); 
+addSkill ("Stadslöpning", 68);
+addSkill ("Terränglöpning", 73);
+addSkill ("Friidrott", 98); 
 
 displaySkills();
 
