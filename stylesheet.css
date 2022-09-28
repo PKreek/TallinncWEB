@@ -126,7 +126,6 @@ body {
 .columns{
     display: grid;
     gap: 1rem;
-    grid-auto-columns: 1fr 1fr 1fr;
     padding: 1rem;
     text-align: center;	
 }
