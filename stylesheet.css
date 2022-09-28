@@ -229,17 +229,12 @@ body {
 
 /* om oss design*/
 .vi img{
-	width: 250px;
-	margin-left: -50px;
-	margin-top:25px;
 	width: 15.625em;
 	margin-left: -3.125em;
 	margin-top:1.5625em;
 }
 .text
 {
-	width: 250px;
-	padding-bottom:25px;
 	width: 3.125em;
 	padding-bottom:15.625em;
 	
@@ -247,7 +242,6 @@ body {
 .nav-main
 {
 	width:100%;
-	
 }
 .nav-main .omOssRubrik
 {
@@ -262,7 +256,6 @@ body {
 {
 	display:flex;
 	flex-wrap: wrap;
-
 }
 li img{
 	list-style:none;
@@ -273,7 +266,6 @@ li img{
     color: #111;
     font-family:arial;
     font-size:1em;
-	
 }
 
 
@@ -285,7 +277,6 @@ li img{
     position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	
 }
 
 .slide {
