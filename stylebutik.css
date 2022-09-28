@@ -66,6 +66,21 @@
 	}
 }
 
+@media only screen and (max-width: 768px) {
+	.skor {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.betalning-sida {
+		margin-top: 14vw;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.menylinks{
+		margin-left: 0;
+		padding: 0;
+	}
+}
+
 @media only screen and (min-width: 992px) {
 	.skor {
 		grid-template-columns: repeat(4, 1fr);
