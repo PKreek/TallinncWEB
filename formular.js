@@ -36,7 +36,6 @@ function valideringNamn()
     if(nameValue==='')
     {
         validNamn=false;
-        test();
         setErrorFor(namn,'Namn kan inte vara blank');
     }
     else if(nameValue.length >=40)
